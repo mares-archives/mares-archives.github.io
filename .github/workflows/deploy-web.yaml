@@ -30,10 +30,7 @@ jobs:
         run: make install
 
       - name: Generate web
-        run: | 
-          git pull --recurse-submodules
-          git submodule update --remote --recursive
-          make generate
+        run: make generate
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
