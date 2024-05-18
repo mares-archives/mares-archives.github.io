@@ -25,16 +25,15 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - name: Install dependencies
-        run: |
-          git pull --recurse-submodules
-          git submodule update --remote --recursive
 
       - name: Install dependencies
         run: make install
 
       - name: Generate web
-        run: make generate
+        run: | 
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+          make generate
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
