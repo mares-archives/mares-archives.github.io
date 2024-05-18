@@ -1,0 +1,17 @@
+id: R8
+name: Film Kladivo na čarodejnice
+
+films:
+  F1:
+    name: Kladivo na čarodejnice
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    comment: "Nějaké části jsou 18+, nekoukat se před rodiči"
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+
+#aditional_questions:
+#  - Some question
+
+ref_len: 1.5 # num of pages
+font_size: 12

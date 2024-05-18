@@ -1,0 +1,20 @@
+id: R1
+name: Film Boj o oheň
+description: Necelé dvě hodiny random zvuků
+
+films:
+  F1:
+    name: Boj o oheň
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+
+aditional_questions:
+  - Jaké zbraně se ve filmu používaly
+  - Proč byl pro ně ohěň tak dáležitý
+  - Jak se ve filmu utvářely sociální vazby? (partnerství, rodina)
+  - Co bylo typické pro každou ze čtyř různých skupin které se ve filmu
+
+ref_len: 1.5 # num of pages
+font_size: 12

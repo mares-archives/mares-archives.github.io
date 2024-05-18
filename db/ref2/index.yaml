@@ -1,0 +1,28 @@
+id: R2
+name: Trilogie Osada Havranů, Na Veliké řece, Volání rodu
+
+films:
+  F1:
+    name: Osada Havranů
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+  F2:
+    name: Na Veliké řece
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+  F3:
+    name: Volání rodu
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+
+#aditional_questions:
+#  - Some question
+
+ref_len: 1.5 # num of pages
+font_size: 12

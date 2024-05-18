@@ -1,0 +1,16 @@
+id: R3
+name: Film Romulus a Remus
+
+films:
+  F1:
+    name: Romulus a Remus
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+
+#aditional_questions:
+#  - Some question
+
+ref_len: 1.5 # num of pages
+font_size: 12

@@ -1,0 +1,28 @@
+id: R7
+name: Trilogie Ohněm a mečem, Potopa, Pan Wolodyjowksi
+
+films:
+  F1:
+    name: Ohněm a mečem
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+  F2:
+    name: Potopa
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+  F3:
+    name: Pan Wolodyjowski
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+
+#aditional_questions:
+#  - Some question
+
+ref_len: 1.5 # num of pages
+font_size: 12

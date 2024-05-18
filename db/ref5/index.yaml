@@ -1,0 +1,28 @@
+id: R5
+name: Trilogie Jan Hus, Jan Žižka, Proti všem
+
+films:
+  F1:
+    name: Jan Hus
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+  F2:
+    name: Jan Žižka
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+  F3:
+    name: Proti všem
+    link: ...
+    length: "0:0:0" # hh:mm:ss
+    speedrun_link: ...
+    speedrun_length: "0:0:0" # hh:mm:ss
+
+#aditional_questions:
+#  - Some question
+
+ref_len: 2 # num of pages
+font_size: 12
