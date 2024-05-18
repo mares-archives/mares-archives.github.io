@@ -45,7 +45,7 @@ class GenerateWeb:
             extensions=[ColorExtension],
         )
 
-        prefix = "mares/"
+        prefix = ""
         self.paths = {
             "/": {"path": prefix+"index.html", "showHeader": False, "external": False},
             "Referats": {
