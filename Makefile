@@ -9,4 +9,4 @@ serve:
 	python3 maresarchives.py serve
 
 serve-no-livereload:
-	python3 maresarchives.py serve --no-livereload --port 8888
+	python3 maresarchives.py serve --no-livereload

@@ -30,7 +30,7 @@ jobs:
         run: make install
 
       - name: Generate web
-        run: make serve-no-livereload
+        run: make generate
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
