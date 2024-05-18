@@ -27,7 +27,7 @@ jobs:
           path: .cache
       - name: Install dependencies
         run: |
-          git pull --recursive
+          git pull --recurse-submodules
           git submodule update --remote --recursive
 
       - name: Install dependencies
