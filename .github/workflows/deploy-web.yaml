@@ -26,6 +26,11 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
+    - name: Git Submodule Update
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+
       - name: Install dependencies
         run: make install
 

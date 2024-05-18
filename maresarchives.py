@@ -131,4 +131,5 @@ cli.add_command(generate)
 cli.add_command(serve)
 
 if __name__ == "__main__":
+    print(os.listdir("db"))
     cli()
