@@ -4,8 +4,8 @@ name: Film Břetistlav a Jitka
 films:
   F1:
     name: Břetislav a Jitka
-    link: ...
-    length: "0:0:0" # hh:mm:ss
+    link: https://www.ceskatelevize.cz/porady/134851-bretislav-a-jitka/
+    length: "1:16:47" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=RFu2SYuMF94
     speedrun_length: "0:46:08" # hh:mm:ss
 

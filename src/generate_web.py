@@ -115,7 +115,7 @@ class GenerateWeb:
         film_lens = [
             film.get("length") for film_set in film_list for film in film_set.values()
         ]
-        speedrunfilm_lens = [
+        speedrun_film_lens = [
             film.get("speedrun_length") for film_set in film_list for film in film_set.values()
         ]
 
@@ -128,11 +128,11 @@ class GenerateWeb:
         info["wasted_time"] = timedelta(seconds=total_seconds)
 
         total_seconds = 0
-        for time_str in speedrunfilm_lens:
+        for time_str in speedrun_film_lens:
             hours, minutes, seconds = map(int, time_str.split(":"))
             total_seconds += hours * 3600 + minutes * 60 + seconds
 
-        info["wasted_speedruntime"] = timedelta(seconds=total_seconds)
+        info["speedrun_wasted_time"] = timedelta(seconds=total_seconds)
 
         self.render_page(
             "refs.html",
@@ -151,7 +151,7 @@ class GenerateWeb:
         for i, info in enumerate(self.info):
             film_list = [films for films in info["films"]]
             film_lens = [info["films"][f]["length"] for f in film_list]
-            speedrunfilm_lens = [info["films"][f]["length"] for f in film_list]
+            speedrun_film_lens = [info["films"][f]["speedrun_length"] for f in film_list]
 
             total_seconds = 0
             for time_str in film_lens:
@@ -161,7 +161,7 @@ class GenerateWeb:
             info["total_time"] = timedelta(seconds=total_seconds)
 
             total_seconds = 0
-            for time_str in speedrunfilm_lens:
+            for time_str in speedrun_film_lens:
                 hours, minutes, seconds = map(int, time_str.split(":"))
                 total_seconds += hours * 3600 + minutes * 60 + seconds
 
