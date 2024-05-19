@@ -4,11 +4,11 @@ name: Film Na západní frontě klid
 films:
   F1:
     name: Na západní frontě klid
-    link: ...
-    length: "0:0:0" # hh:mm:ss
+    link: https://www.youtube.com/watch?v=obrATt5X5AY
+    length: "2:03:15" # hh:mm:ss
     comment: "Nejlepší film ze všech"
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=CyGAO3HZJ30
+    speedrun_length: "1:00:2" # hh:mm:ss
 
 #aditional_questions:
 #  - Some question

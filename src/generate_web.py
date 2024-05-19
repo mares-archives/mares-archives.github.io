@@ -45,21 +45,23 @@ class GenerateWeb:
             extensions=[ColorExtension],
         )
 
-        prefix = ""
         self.paths = {
-            "/": {"path": prefix+"index.html", "showHeader": False, "external": False},
+            "/": {"path": "index.html", "showHeader": False, "external": False},
             "Referats": {
-                "path": prefix+"referats/index.html",
+                "path": "referats/index.html",
+                "link": "referats/",
                 "showHeader": True,
                 "external": False,
             },
             "Ref": {
-                "path": prefix+"ref/{}/index.html",
+                "path": "ref/{}/index.html",
+                "link": "ref/{}/",
                 "showHeader": False,
                 "external": False,
             },
-            "Transcript": {
-                "path": prefix+"transcript/{}/index.html",
+            "ExampleRefs": {
+                "path": "ref/{}/examples/index.html",
+                "link": "ref/{}/examples/",
                 "showHeader": False,
                 "external": False,
             },
@@ -72,7 +74,7 @@ class GenerateWeb:
         self.generate_refs_list()
         self.generate_ref_detail()
 
-        self.generate_transcript_detail()
+        self.generate_example_refs()
 
         if self.compile_tailwind:
             self.compile_tailwind_css()
@@ -116,7 +118,9 @@ class GenerateWeb:
             film.get("length") for film_set in film_list for film in film_set.values()
         ]
         speedrun_film_lens = [
-            film.get("speedrun_length") for film_set in film_list for film in film_set.values()
+            film.get("speedrun_length")
+            for film_set in film_list
+            for film in film_set.values()
         ]
 
         info = {}
@@ -151,7 +155,9 @@ class GenerateWeb:
         for i, info in enumerate(self.info):
             film_list = [films for films in info["films"]]
             film_lens = [info["films"][f]["length"] for f in film_list]
-            speedrun_film_lens = [info["films"][f]["speedrun_length"] for f in film_list]
+            speedrun_film_lens = [
+                info["films"][f]["speedrun_length"] for f in film_list
+            ]
 
             total_seconds = 0
             for time_str in film_lens:
@@ -167,19 +173,85 @@ class GenerateWeb:
 
             info["speedrun_total_time"] = timedelta(seconds=total_seconds)
 
-
             path_ref = self.paths.get("Ref").get("path").format(info["id"])
 
             info["films"] = info["films"].values()
 
             self.render_page("refDetail.html", path_ref, info=info)
 
-    def generate_transcript_detail(self):
-        print(self.transcripts)
-        for i, trans in enumerate(self.transcripts):
-            path_trans = self.paths.get("Transcript").get("path").format("R" + str(i))
+    def generate_example_refs(self):
+        def conv_md_ds(i: int, data: str) -> str:
+            _data = str(data).replace("\"**", "_*").replace("**\"", "_*").split("_*")
+            if len(_data) == 1:
+                return data
 
-            self.render_page("transcriptDetail.html", path_trans, trans=trans)
+            if len(_data) % 2 == 0:
+                print(f"Ref{i} - Error while converting md to html")
+
+            elif (len(_data) - 1) % 4 == 0:
+                tmp = ""
+                for i in range(len(_data)):
+                    if i % 2:
+                        tmp += f"<a class='font-bold'>\"{_data[i]}\"</a>"
+                    else:
+                        tmp += f"{_data[i]}"
+                data = tmp
+
+            return data
+
+        def conv_md_strong(i: int, data: str) -> str:
+            _data = str(data).split("**")
+            print(_data)
+            if len(_data) == 1:
+                return data
+
+            if len(_data) % 2 == 0:
+                print(f"Ref{i} - Error while converting md to html")
+
+            elif (len(_data) - 1) % 4 == 0:
+                tmp = ""
+                for i in range(len(_data)):
+                    if i % 2:
+                        tmp += f"<a class='font-extrabold'>{_data[i]}</a>"
+                    else:
+                        tmp += _data[i]
+                data = tmp
+
+            return data
+
+
+        def conv_md_h_tags(i: int, data: str) -> str:
+
+            tmp = []
+            for d in data.split("\n"):
+                if "#" in d:
+                    d = "<a class='font-extrabold text-lg'>" + d.replace("#", "") + "</a>"
+                tmp.append(d)
+
+            return "\n".join(tmp)
+
+        def conv_md_newline(i: int, data: str) -> str:
+            data = data.replace("\n\n", "\n <br>")
+            _data = []
+            for d in data.split("\n"):
+                _data.append(f"<p class='dark:text-gray-300 text-gray-600'>{d}</p>")
+            return "".join(_data)
+
+        def conv_markdown(i, data: str):
+            data = conv_md_ds(i, data)
+            data = conv_md_strong(i, data)
+            data = conv_md_h_tags(i, data)
+            data = conv_md_newline(i, data)
+
+            return data
+
+
+        for i, refs in enumerate(self.refs):
+            path_refs = self.paths.get("ExampleRefs").get("path").format(f"R{i+1}")
+
+            md_refs = [conv_markdown(i, ref) for ref in refs]
+
+            self.render_page("exampleRefs.html", path_refs, refs=refs, md_refs=md_refs)
 
     def render_page(
         self, template_name: Union[str, "Template"], path_render: str, **kwargs

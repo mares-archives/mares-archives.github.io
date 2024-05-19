@@ -54,8 +54,6 @@ def generate(
 
     folder_list = sorted(folder_list, key=custom_sort_key)
 
-    print(folder_list)
-
     info: list[dict]
     refs: list[list[str]]
     transcripts: list[list[str]]
@@ -131,7 +129,4 @@ cli.add_command(generate)
 cli.add_command(serve)
 
 if __name__ == "__main__":
-    print(os.listdir("."))
-    print(os.listdir("db"))
-    print(os.listdir("static"))
     cli()
