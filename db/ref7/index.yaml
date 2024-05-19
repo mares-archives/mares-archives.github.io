@@ -4,22 +4,28 @@ name: Trilogie Ohněm a mečem, Potopa, Pan Wolodyjowksi
 films:
   F1:
     name: Ohněm a mečem
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    link: https://www.youtube.com/watch?v=zBVw1dc4OCw
+    length: "3:14:27" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=hYWeIyjNNc0
+    speedrun_length: "2:18:1" # hh:mm:ss
   F2:
-    name: Potopa
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    name: Potopa 1/2
+    link: https://www.youtube.com/watch?v=GhylSmcnmaI
+    length: "2:27:44" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=yfPZre110Zg
+    speedrun_length: "1:46:0" # hh:mm:ss
   F3:
+    name: Potopa 2/2
+    link: https://www.youtube.com/watch?v=Be3bCFWFcD4
+    length: "2:08:08" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=zvWjv3rcehg
+    speedrun_length: "1:10:48" # hh:mm:ss
+  F4:
     name: Pan Wolodyjowski
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    link: https://www.youtube.com/watch?v=F3wVTtoCCS8
+    length: "2:28:24" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=4gs5l_WMQQ8
+    speedrun_length: "1:26:37" # hh:mm:ss
 
 #aditional_questions:
 #  - Some question

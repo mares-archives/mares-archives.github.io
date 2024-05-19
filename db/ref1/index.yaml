@@ -5,10 +5,10 @@ description: Necelé dvě hodiny random zvuků
 films:
   F1:
     name: Boj o oheň
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    link: https://www.youtube.com/watch?v=B65lYWSqwJM
+    length: "1:35:47" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=Vf19CL4CUhs
+    speedrun_length: "0:25:28" # hh:mm:ss
 
 aditional_questions:
   - Jaké zbraně se ve filmu používaly

@@ -4,22 +4,22 @@ name: Trilogie Osada Havranů, Na Veliké řece, Volání rodu
 films:
   F1:
     name: Osada Havranů
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    link: https://www.youtube.com/watch?v=M_Y4cPrXgts
+    length: "1:05:35" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=UgJeO66YucE
+    speedrun_length: "0:37:53" # hh:mm:ss
   F2:
     name: Na Veliké řece
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    link: https://www.youtube.com/watch?v=1PSLv1PPUPA
+    length: "1:05:07" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=wL3__SopVJU
+    speedrun_length: "0:43:46" # hh:mm:ss
   F3:
     name: Volání rodu
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    link: https://www.youtube.com/watch?v=wd6BLQs_PJM
+    length: "1:05:18" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=AS9Cllaicwc
+    speedrun_length: "0:27:10" # hh:mm:ss
 
 #aditional_questions:
 #  - Some question

@@ -4,11 +4,11 @@ name: Film Kladivo na čarodejnice
 films:
   F1:
     name: Kladivo na čarodejnice
-    link: ...
-    length: "0:0:0" # hh:mm:ss
     comment: "Nějaké části jsou 18+, nekoukat se před rodiči"
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    link: https://www.youtube.com/watch?v=SXj6uh2U98A
+    length: "1:42:24" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=VrxBs1o1NOs
+    speedrun_length: "1:03:48" # hh:mm:ss
 
 #aditional_questions:
 #  - Some question
