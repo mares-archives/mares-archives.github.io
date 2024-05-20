@@ -3,23 +3,35 @@ name: Trilogie Dny zrady, Sokolovo, Osvobození Prahy
 
 films:
   F1:
-    name: Dny zrady
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    name: Dny zrady 1/2
+    link: https://www.youtube.com/watch?v=rN9tao8cJWA
+    length: "1:46:00" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=lAiu0WLoCDg
+    speedrun_length: "1:09:26" # hh:mm:ss
   F2:
-    name: Sokolovo
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    name: Dny zrady 2/2
+    link: https://www.youtube.com/watch?v=Y41shiPmwtc
+    length: "1:31:46" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=WAi501BmUBo
+    speedrun_length: "1:05:53" # hh:mm:ss
   F3:
-    name: Osvobození Prahy
-    link: ...
-    length: "0:0:0" # hh:mm:ss
-    speedrun_link: ...
-    speedrun_length: "0:0:0" # hh:mm:ss
+    name: Sokolovo
+    link: https://www.youtube.com/watch?v=SzXrbrI3sGc
+    length: "2:07:04" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=HmXmeMz8EpM
+    speedrun_length: "1:15:18" # hh:mm:ss
+  F4:
+    name: Osvobození Prahy 1/2
+    link: https://www.youtube.com/watch?v=igoNUhgKqAo
+    length: "1:08:14" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=mBzAaAStcng
+    speedrun_length: "0:50:59" # hh:mm:ss
+  F5:
+    name: Osvobození Prahy 2/2
+    link: https://www.youtube.com/watch?v=kjq_FA6CCbg
+    length: "1:10:00" # hh:mm:ss
+    speedrun_link: https://www.youtube.com/watch?v=vC1_PtgwG7s
+    speedrun_length: "0:56:20" # hh:mm:ss
 
 #aditional_questions:
 #  - Some question

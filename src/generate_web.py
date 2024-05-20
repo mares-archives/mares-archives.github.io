@@ -18,7 +18,7 @@ class GenerateWeb:
     def __init__(
         self,
         info: list[dict],
-        refs: list[list[str]],
+        materials: list[list[str]],
         transcripts: list[list[str]],
         build_dir: str = "build",
         template_dir: path = "templates",
@@ -28,7 +28,7 @@ class GenerateWeb:
     ):
 
         self.info = info
-        self.refs = refs
+        self.materials = materials
         self.transcripts = transcripts
 
         self.static_dir = static_dir
@@ -59,9 +59,9 @@ class GenerateWeb:
                 "showHeader": False,
                 "external": False,
             },
-            "ExampleRefs": {
-                "path": "ref/{}/examples/index.html",
-                "link": "ref/{}/examples/",
+            "RefMaterials": {
+                "path": "ref/{}/materials/index.html",
+                "link": "ref/{}/materials/",
                 "showHeader": False,
                 "external": False,
             },
@@ -74,7 +74,7 @@ class GenerateWeb:
         self.generate_refs_list()
         self.generate_ref_detail()
 
-        self.generate_example_refs()
+        self.generate_ref_materials()
 
         if self.compile_tailwind:
             self.compile_tailwind_css()
@@ -179,53 +179,51 @@ class GenerateWeb:
 
             self.render_page("refDetail.html", path_ref, info=info)
 
-    def generate_example_refs(self):
+    def generate_ref_materials(self):
         def conv_md_ds(i: int, data: str) -> str:
-            _data = str(data).replace("\"**", "_*").replace("**\"", "_*").split("_*")
+            _data = str(data).split('"')
             if len(_data) == 1:
                 return data
 
             if len(_data) % 2 == 0:
                 print(f"Ref{i} - Error while converting md to html")
+                return data
 
-            elif (len(_data) - 1) % 4 == 0:
-                tmp = ""
-                for i in range(len(_data)):
-                    if i % 2:
-                        tmp += f"<a class='font-bold'>\"{_data[i]}\"</a>"
-                    else:
-                        tmp += f"{_data[i]}"
-                data = tmp
-
-            return data
+            tmp = ""
+            for i in range(len(_data)):
+                if i % 2:
+                    tmp += f"<a class='font-bold'>\"{_data[i]}\"</a>"
+                else:
+                    tmp += f"{_data[i]}"
+            return tmp
 
         def conv_md_strong(i: int, data: str) -> str:
             _data = str(data).split("**")
-            print(_data)
             if len(_data) == 1:
                 return data
 
             if len(_data) % 2 == 0:
                 print(f"Ref{i} - Error while converting md to html")
+                return data
 
-            elif (len(_data) - 1) % 4 == 0:
-                tmp = ""
-                for i in range(len(_data)):
-                    if i % 2:
-                        tmp += f"<a class='font-extrabold'>{_data[i]}</a>"
-                    else:
-                        tmp += _data[i]
-                data = tmp
-
-            return data
-
+            tmp = ""
+            for i in range(len(_data)):
+                if i % 2:
+                    tmp += f"<a class='font-extrabold'>{_data[i]}</a>"
+                else:
+                    tmp += _data[i]
+            return tmp
 
         def conv_md_h_tags(i: int, data: str) -> str:
 
             tmp = []
             for d in data.split("\n"):
                 if "#" in d:
-                    d = "<a class='font-extrabold text-lg'>" + d.replace("#", "") + "</a>"
+                    d = (
+                        "<a class='font-extrabold text-lg'>"
+                        + d.replace("#", "")
+                        + "</a>"
+                    )
                 tmp.append(d)
 
             return "\n".join(tmp)
@@ -238,20 +236,27 @@ class GenerateWeb:
             return "".join(_data)
 
         def conv_markdown(i, data: str):
-            data = conv_md_ds(i, data)
             data = conv_md_strong(i, data)
+            data = conv_md_ds(i, data)
             data = conv_md_h_tags(i, data)
             data = conv_md_newline(i, data)
 
             return data
 
+        for i, materials in enumerate(self.materials):
+            path_materials = (
+                self.paths.get("RefMaterials").get("path").format(f"R{i+1}")
+            )
 
-        for i, refs in enumerate(self.refs):
-            path_refs = self.paths.get("ExampleRefs").get("path").format(f"R{i+1}")
+            md_materials = [conv_markdown(i, str(m)) for m in materials]
 
-            md_refs = [conv_markdown(i, ref) for ref in refs]
-
-            self.render_page("exampleRefs.html", path_refs, refs=refs, md_refs=md_refs)
+            self.render_page(
+                "refMaterials.html",
+                path_materials,
+                refs=materials,
+                md_materials=md_materials,
+                info=self.info[i],
+            )
 
     def render_page(
         self, template_name: Union[str, "Template"], path_render: str, **kwargs

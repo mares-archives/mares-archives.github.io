@@ -5,9 +5,9 @@ films:
   F1:
     name: Romulus a Remus
     link: https://www.youtube.com/watch?v=QBrPH3txhlE
-    length: "1:44:24" # hh:mm:ss
+    length: "1:44:25" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=0XGa71zkAnk
-    speedrun_length: "1:14:27" # hh:mm:ss
+    speedrun_length: "1:14:08" # hh:mm:ss
 
 #aditional_questions:
 #  - Some question

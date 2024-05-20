@@ -55,17 +55,17 @@ def generate(
     folder_list = sorted(folder_list, key=custom_sort_key)
 
     info: list[dict]
-    refs: list[list[str]]
+    materials: list[list[str]]
     transcripts: list[list[str]]
 
     info = [
         yaml.safe_load(open(os.path.join(input_db, folder, "index.yaml"), "r"))
         for folder in folder_list
     ]
-    refs = [
+    materials = [
         [
-            open(os.path.join(input_db, folder, "refs", file), "r").read()
-            for file in os.listdir(os.path.join(input_db, folder, "refs"))
+            open(os.path.join(input_db, folder, "materials", file), "r").read()
+            for file in os.listdir(os.path.join(input_db, folder, "materials"))
         ]
         for folder in folder_list
     ]
@@ -79,7 +79,7 @@ def generate(
 
     generate_web = GenerateWeb(
         info,
-        refs,
+        materials,
         transcripts,
         build_dir,
         path.abspath(template_dir),
