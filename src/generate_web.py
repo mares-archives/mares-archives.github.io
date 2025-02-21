@@ -182,7 +182,7 @@ class GenerateWeb:
             self.render_page("refDetail.html", path_ref, info=info)
 
     def generate_i_was_bored(self):
-            self.render_page("refDetail.html", "/i-was-bored-at-MET-classes-with-Kubosh/this-was-made-at-22:53/21.2.2025")
+            self.render_page("i-was-bored.html", "i-was-bored-at-MET-classes-with-Kubosh/this-was-made-at-22:53/21.2.2025")
 
     def generate_ref_materials(self):
         def conv_md_ds(i: int, data: str) -> str:
