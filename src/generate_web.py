@@ -74,6 +74,8 @@ class GenerateWeb:
         self.generate_refs_list()
         self.generate_ref_detail()
 
+        self.generate_i_was_bored()
+
         self.generate_ref_materials()
 
         if self.compile_tailwind:
@@ -178,6 +180,9 @@ class GenerateWeb:
             info["films"] = info["films"].values()
 
             self.render_page("refDetail.html", path_ref, info=info)
+
+    def generate_i_was_bored(self):
+            self.render_page("refDetail.html", "/i-was-bored-at-MET-classes-with-Kubosh/this-was-made-at-22:53/21.2.2025")
 
     def generate_ref_materials(self):
         def conv_md_ds(i: int, data: str) -> str:
