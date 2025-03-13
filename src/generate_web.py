@@ -76,7 +76,7 @@ class GenerateWeb:
 
         self.generate_i_was_bored()
 
-        self.generate_ref_materials()
+        #self.generate_ref_materials()
 
         if self.compile_tailwind:
             self.compile_tailwind_css()
