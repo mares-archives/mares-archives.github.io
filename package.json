@@ -1,9 +1,9 @@
 {
-  "name": "ProjectIndexer",
+  "name": "mares-archives",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:RoboticsBrno/ProjectIndexer.git",
-  "author": "RoboticsBrno",
+  "repository": "https://github.com/mares-archives/mares-archives.github.io",
+  "author": "mares-archives",
   "license": "MIT",
   "dependencies": {
     "preline": "^1.8.0",

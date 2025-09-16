@@ -2,8 +2,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="mx-2">
-    <div class="grid grid-cols-1 gap-2">
-
+    <div id="materials" class="grid grid-cols-1 gap-2">
         {% for md_material in md_materials %}
         <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
             <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
@@ -12,5 +11,23 @@
         </div>
         {% endfor %}
     </div>
+    <script>
+        function shuffleDivs() {
+            const parent = document.getElementById('materials');
+            const children = Array.from(parent.children);
+
+            for (let i = children.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [children[i], children[j]] = [children[j], children[i]];
+            }
+            for (let i = children.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [children[i], children[j]] = [children[j], children[i]];
+            }
+
+            children.forEach(child => parent.appendChild(child));
+        }
+        window.onload = shuffleDivs;
+    </script>
 </div>
 {% endblock %}

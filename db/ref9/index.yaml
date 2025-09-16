@@ -1,13 +1,16 @@
 id: R9
 name: Film Na západní frontě klid
+description: Acually nejlepší film
 
 films:
   F1:
     name: Na západní frontě klid
     link: https://www.youtube.com/watch?v=obrATt5X5AY
+    google_link: https://drive.google.com/file/d/1kVCWbDXw3jhCZmXcdUvhuOGXOE0oyeP8/view?usp=drive_link
     length: "2:03:15" # hh:mm:ss
     comment: "Nejlepší film ze všech"
     speedrun_link: https://www.youtube.com/watch?v=CyGAO3HZJ30
+    google_speedrun_link: https://drive.google.com/file/d/1Cv5tCr2GkWiAbqiO9uzD2DeUFvsjmgVN/view?usp=drive_link
     speedrun_length: "1:00:2" # hh:mm:ss
 
 #aditional_questions:

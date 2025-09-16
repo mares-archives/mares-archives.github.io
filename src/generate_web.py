@@ -13,7 +13,6 @@ from src.jinja_extensions.color_extension import ColorExtension
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-
 class GenerateWeb:
     def __init__(
         self,
@@ -74,8 +73,6 @@ class GenerateWeb:
         self.generate_refs_list()
         self.generate_ref_detail()
 
-        self.generate_i_was_bored()
-
         self.generate_ref_materials()
 
         if self.compile_tailwind:
@@ -116,25 +113,17 @@ class GenerateWeb:
             refs_info[i]["id_name"] = f"{r['id'][1:]}. {r['name']}"
 
         film_list = [films for films in [i["films"] for i in refs_info]]
-        film_lens = [
-            film.get("length") for film_set in film_list for film in film_set.values()
-        ]
-        speedrun_film_lens = [
-            film.get("speedrun_length")
-            for film_set in film_list
-            for film in film_set.values()
-        ]
 
         info = {}
         total_seconds = 0
-        for time_str in film_lens:
+        for time_str in [film.get("length") for film_set in film_list for film in film_set.values()]:
             hours, minutes, seconds = map(int, time_str.split(":"))
             total_seconds += hours * 3600 + minutes * 60 + seconds
 
         info["wasted_time"] = timedelta(seconds=total_seconds)
 
         total_seconds = 0
-        for time_str in speedrun_film_lens:
+        for time_str in [film.get("speedrun_length") for film_set in film_list for film in film_set.values()]:
             hours, minutes, seconds = map(int, time_str.split(":"))
             total_seconds += hours * 3600 + minutes * 60 + seconds
 
@@ -154,7 +143,7 @@ class GenerateWeb:
         )
 
     def generate_ref_detail(self):
-        for i, info in enumerate(self.info):
+        for info in self.info:
             film_list = [films for films in info["films"]]
             film_lens = [info["films"][f]["length"] for f in film_list]
             speedrun_film_lens = [
@@ -180,9 +169,6 @@ class GenerateWeb:
             info["films"] = info["films"].values()
 
             self.render_page("refDetail.html", path_ref, info=info)
-
-    def generate_i_was_bored(self):
-            self.render_page("i-was-bored.html", "i-was-bored-at-MET-classes-with-Kubosh/this-was-made-at-22:53/21.2.2025/index.html")
 
     def generate_ref_materials(self):
         def conv_md_ds(i: int, data: str) -> str:
@@ -245,7 +231,6 @@ class GenerateWeb:
             data = conv_md_ds(i, data)
             data = conv_md_h_tags(i, data)
             data = conv_md_newline(i, data)
-
             return data
 
         for i, materials in enumerate(self.materials):

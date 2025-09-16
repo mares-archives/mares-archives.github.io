@@ -6,8 +6,10 @@ films:
   F1:
     name: Boj o oheň
     link: https://www.youtube.com/watch?v=B65lYWSqwJM
+    google_link: https://drive.google.com/file/d/1fbr9sn0jm3dnTQTmuHfhyJhAa2zriVA3/view?usp=drive_link
     length: "1:35:47" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=Vf19CL4CUhs
+    google_speedrun_link: https://drive.google.com/file/d/1GSRJRbi4FDVpBqEiCG1A24kQ6X9Mcfgu/view?usp=drive_link
     speedrun_length: "0:25:28" # hh:mm:ss
 
 aditional_questions:

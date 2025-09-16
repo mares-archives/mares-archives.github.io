@@ -5,20 +5,26 @@ films:
   F1:
     name: Jan Hus
     link: https://www.youtube.com/watch?v=z1ZBOqz6CD0
+    google_link: https://drive.google.com/file/d/1zYBADlPeet6bvV3hAMIhrLIFybX667s2/view?usp=drive_link
     length: "1:54:55" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=_HGGW3StbMY
+    google_speedrun_link: https://drive.google.com/file/d/1HXt206YNh5okShEKXvOKbiqH_gkNevFv/view?usp=drive_link
     speedrun_length: "1:16:38" # hh:mm:ss
   F2:
     name: Jan Žižka
     link: https://www.youtube.com/watch?v=t3BkPrsNDrI
+    google_link: 
     length: "1:40:59" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=ppM5m7N8wuQ
+    google_speedrun_link: https://drive.google.com/file/d/1XGxnL02aZf8ibvYOno842SZ-hkfdwWuX/view?usp=drive_link
     speedrun_length: "0:46:20" # hh:mm:ss
   F3:
     name: Proti všem
     link: https://www.youtube.com/watch?v=jcT-GZrDI0s
+    google_link: https://drive.google.com/file/d/1Dy41PhyIZR57ZTIYHTD__OYqpwTD7afK/view?usp=drive_link
     length: "1:49:33" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=rVTL1vFuhcU
+    google_speedrun_link: https://drive.google.com/file/d/1MTmqXNVGAZ6LvROfeiQUS1R0uO9R-Ule/view?usp=drive_link
     speedrun_length: "0:55:14" # hh:mm:ss
 
 #aditional_questions:

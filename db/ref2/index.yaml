@@ -5,20 +5,26 @@ films:
   F1:
     name: Osada Havranů
     link: https://www.youtube.com/watch?v=M_Y4cPrXgts
+    google_link: https://drive.google.com/file/d/1eSfutpOxZZhNxp7vivPgXQ17KPtWP8-D/view?usp=drive_link
     length: "1:05:35" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=UgJeO66YucE
+    google_speedrun_link: https://drive.google.com/file/d/1ZUjd4jiH12_8HziNd2a_fUVo9EU71hiZ/view?usp=drive_link
     speedrun_length: "0:37:53" # hh:mm:ss
-  F2:
+  F2: 
     name: Na Veliké řece
     link: https://www.youtube.com/watch?v=1PSLv1PPUPA
+    google_link: https://drive.google.com/file/d/1d67UVGuk5Sflk5AWI8cMQeyJeKXWNbV1/view?usp=drive_link
     length: "1:05:07" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=wL3__SopVJU
+    google_speedrun_link: https://drive.google.com/file/d/17eyEV2jEZAGBQIHj98CgzsXbsQs4wJpz/view?usp=drive_link
     speedrun_length: "0:43:46" # hh:mm:ss
   F3:
     name: Volání rodu
     link: https://www.youtube.com/watch?v=wd6BLQs_PJM
+    google_link: https://drive.google.com/file/d/11lJ9dYa_TX1bZpR11Cz7c4WZJCm1HqY4/view?usp=drive_link
     length: "1:05:18" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=AS9Cllaicwc
+    google_speedrun_link: https://drive.google.com/file/d/1Z1PE_IkDGOW7G7rZAhuzk4JlbnDcQYXP/view?usp=drive_link
     speedrun_length: "0:27:10" # hh:mm:ss
 
 #aditional_questions:

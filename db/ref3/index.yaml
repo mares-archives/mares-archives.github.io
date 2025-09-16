@@ -5,8 +5,10 @@ films:
   F1:
     name: Romulus a Remus
     link: https://www.youtube.com/watch?v=QBrPH3txhlE
+    google_link: https://drive.google.com/file/d/1K8AxjPVm2EleMOx-Mls74VlRKOhyKUIS/view?usp=drive_link
     length: "1:44:25" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=0XGa71zkAnk
+    google_speedrun_link: https://drive.google.com/file/d/1hpfu4SRQT6u-4QR1IcxPP8jRDpi2xJjg/view?usp=drive_link
     speedrun_length: "1:14:08" # hh:mm:ss
 
 #aditional_questions:

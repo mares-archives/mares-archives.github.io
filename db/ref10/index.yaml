@@ -5,32 +5,42 @@ films:
   F1:
     name: Dny zrady 1/2
     link: https://www.youtube.com/watch?v=rN9tao8cJWA
+    google_link: https://drive.google.com/file/d/1OUvhXjDzHuV_H78Ss2-kLxYqDY7-iLBs/view?usp=drive_link
     length: "1:46:00" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=HOBMD4beSkk
+    google_speedrun_link: https://drive.google.com/file/d/1t9NrR1lp-X-A_souEBbNxxB34lcxIgRT/view?usp=drive_link
     speedrun_length: "1:06:30" # hh:mm:ss
   F2:
     name: Dny zrady 2/2
     link: https://www.youtube.com/watch?v=Y41shiPmwtc
+    google_link: https://drive.google.com/file/d/1v5n7Efh0h8JmT26blUU1nSJSwYQIrhPC/view?usp=drive_link
     length: "1:31:46" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=_eIw0fCw1J8
+    google_speedrun_link: https://drive.google.com/file/d/1xskLt3cIWkcHfhaAA8iBg95py59DByjN/view?usp=drive_link
     speedrun_length: "1:03:55" # hh:mm:ss
   F3:
     name: Sokolovo
     link: https://www.youtube.com/watch?v=SzXrbrI3sGc
+    google_link: https://drive.google.com/file/d/1FyStFuInSdXiN3uLypkuL18i4ulZuU_3/view?usp=drive_link
     length: "2:07:04" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=LvYes8iZVUA
+    google_speedrun_link: https://drive.google.com/file/d/1JlPdwYVdGj4oXKtg9EtahFZqmEv8fO7V/view?usp=drive_link
     speedrun_length: "1:24:44" # hh:mm:ss
   F4:
     name: Osvobození Prahy 1/2
     link: https://www.youtube.com/watch?v=igoNUhgKqAo
+    google_link: https://drive.google.com/file/d/1rt8b3DyUVdM1kMpquJFtFfuUQC-d5T6v/view?usp=drive_link
     length: "1:08:14" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=mBzAaAStcng
+    google_speedrun_link: https://drive.google.com/file/d/1TsMkCd-PbQyjFwcyrAU1jKkYWQjEX3_a/view?usp=drive_link
     speedrun_length: "0:50:59" # hh:mm:ss
   F5:
     name: Osvobození Prahy 2/2
     link: https://www.youtube.com/watch?v=kjq_FA6CCbg
+    google_link: https://drive.google.com/file/d/1L_XpNAntZU_yy2-Valk1Tg3bdx_qp3kc/view?usp=drive_link
     length: "1:10:00" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=vC1_PtgwG7s
+    google_speedrun_link: https://drive.google.com/file/d/1Ki-MWbr2AkLnJebkTGryyxVekzA6KSN0/view?usp=drive_link
     speedrun_length: "0:56:20" # hh:mm:ss
 
 #aditional_questions:

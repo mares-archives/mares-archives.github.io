@@ -5,8 +5,10 @@ films:
   F1:
     name: Křižáci
     link: https://www.youtube.com/watch?v=E6mcyhfzqg0
+    google_link: https://drive.google.com/file/d/14QIZmz1eNwhKMGV8s7CmwztaoWMHRqgT/view?usp=drive_link
     length: "2:44:31" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=EftsNerBQVU
+    google_speedrun_link: https://drive.google.com/file/d/1elx4Km9M26vtOpdYIFf2hhoVKk7Jj7VJ/view?usp=drive_link
     speedrun_length: "1:49:50" # hh:mm:ss
 
 #aditional_questions:

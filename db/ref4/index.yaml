@@ -5,8 +5,10 @@ films:
   F1:
     name: Břetislav a Jitka
     link: https://www.ceskatelevize.cz/porady/134851-bretislav-a-jitka/
+    google_link: https://drive.google.com/file/d/1NI5QQeGl_dJ3tMnMUZcYq-O-bXlose7p/view?usp=drive_link
     length: "1:16:47" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=RFu2SYuMF94
+    google_speedrun_link: https://drive.google.com/file/d/1Sp6LPGtKL5cjMljLgF_psAlcz3S1BAWu/view?usp=drive_link
     speedrun_length: "0:46:08" # hh:mm:ss
 
 #aditional_questions:

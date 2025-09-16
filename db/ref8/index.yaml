@@ -1,13 +1,16 @@
 id: R8
 name: Film Kladivo na čarodejnice
+description: Nejlepší film podle Mareše
 
 films:
   F1:
     name: Kladivo na čarodejnice
-    comment: "Nějaké části jsou 18+, nekoukat se před rodiči"
+    comment: "Varování: Porno"
     link: https://www.youtube.com/watch?v=SXj6uh2U98A
+    google_link: https://drive.google.com/file/d/1t-Appmqu5KeWwFAtmmWHQCbzg1EQF4d1/view?usp=drive_link
     length: "1:42:24" # hh:mm:ss
     speedrun_link: https://www.youtube.com/watch?v=VrxBs1o1NOs
+    google_speedrun_link: https://drive.google.com/file/d/1aaJRdTNft0QB0Miu9kBtfY6JRNdqD89S/view?usp=drive_link
     speedrun_length: "1:03:48" # hh:mm:ss
 
 #aditional_questions:

@@ -1,2 +1,1 @@
-# mares-archives.github.io
-Site for mares archives
+If you find this, Hello, i am a student (mayby former) of SPS Trutnov. I really didnt want you to go through the Histroy refs so here it is, if you have any question, idea, update, just anythig email me at `da.mares.archive@gmail.com`
