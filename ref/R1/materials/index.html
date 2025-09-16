@@ -1,7 +1,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head class="dark:bg-gray-800 bg-gray-200">
+
+<head class="bg-gray-200">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
@@ -9,198 +10,89 @@
 <script src="/assets/js/preline.js"></script>
 
 <link rel="stylesheet" href="/assets/css/font-awesome-6.4.1.css">
-
-
     <title>Materials for Film Boj o oheň</title>
 </head>
+
 <body class="flex flex-col min-h-screen">
-    
-<header class="px-2 fixed top-0 left-0 right-0 z-50 w-full flex items-center justify-center flex-nowrap">
-    <nav class="mt-2 mx-2 py-1 px-4 md:h-20 relative w-full bg-white border border-gray-200 rounded-[26px] md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700" aria-label="Global">
+    <header class=" fixed top-0 left-0 right-0 z-50 w-full flex items-center justify-center flex-nowrap">
+    <nav
+        class="mt-2 mx-2 py-1 pl-4 pr-4 md:pr-6 md:h-20 relative w-full border rounded-[16px] md:rounded-[26px] md:flex md:items-center md:justify-between  bg-gray-800 border-gray-700">
         <div class="flex items-center justify-between">
-            <a class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white w-100" href="/">
+            <a class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white w-100"
+                href="/">
                 <img class="w-12 h-auto" src="/assets/logo.png" alt="Logo">
                 <div class="hover:text-blue-600">
                     Mares archives
                 </div>
             </a>
             <div class="md:hidden">
-                <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-                    <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                <button type="button"
+                    class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                    data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+                    aria-label="Toggle navigation">
+                    <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
-                    <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                     </svg>
                 </button>
             </div>
         </div>
-        <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
-            <div class="flex mt-6 md:mt-0 md:pl-7 flex-col gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7">
+        <div id="navbar-collapse-with-animation"
+            class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+            <div
+                class="flex mt-6 md:mt-0 md:pl-7 flex-col gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7">
                 
-                    
-                    
-                    
-                    
-
-                    
                 
-                    
-                    
-                    
-                    
-
-                    
-                        
-                            <a class="font-medium md:py-4 text-gray-500 hover:text-gray-400 dark:text-gray-400 hover:text-gray-500"
-                               href="/referats"
-                               >
-                                Referats
-                            </a>
-                        
-                    
                 
-                    
-                    
-                    
-                    
-
-                    
                 
-                    
-                    
-                    
-                    
-
-                    
                 
 
+                
+                
+                
+                
+                
+                
 
+                
+                
+                <a class="font-medium md:py-4 text-gray-500 hover:text-gray-400 dark:text-gray-400 hover:text-gray-500"
+                    href="/referats" >
+                    Referats
+                </a>
+                
+                
+                
+                
+                
+                
+                
 
+                
+                
+                
+                
+                
+                
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                
+                
 
             </div>
         </div>
     </nav>
 </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     <div class="mt-20 md:mt-28">
         
 <div class="mx-2">
-    <div class="grid grid-cols-1 gap-2">
-
-        
-        <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
-            <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
-                <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Boj o oheň</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film pojednával o životě v pravěku. Na začátku filmu můžeme vidět skupinu lidí, která žije v lese, v jeskyni, udržuje si oheň, což je pro ně velmi důležitá věc, už jen kvůli tomu, že si za pomoci něho mohli upravovat jídlo, zdokonalovat zbraně, jako například oštěp. A také to pro ně byla ochrana před zvířaty a před zimou. Jednoho dne na ně vtrhla jiná skupina, která jim chtěla sebrat území a oheň. Strhla se bitva, zabíjeli se hlava nehlava, bohužel skupina, která je napadla, vyhrála. Což pro ně znamenalo ztrátu obydlí, ohně i některých členů skupiny. Museli odejít. Bylo jasné, že museli opustit území, ale při hledání nového území je vystopovala smečka vlků, což znamenalo, že musí utíkat, co jim nohy stačí, někteří ale utéct nestihly. Ti, kteří utekli, se schovali na ostrůvku v mělkých vodách. Najednou k nim přišel ještě jeden člen jejich skupiny, který naštěstí nesl lucernu s malým plamínkem, který stihl uchránit. Když už byl blízko na pár metrů začal se potápět, jelikož kousek od ostrůvku byla voda hlubší. Všichni se vrhli pro lucernu, aby se nepotopila. Povedlo se, lucerna byla na ostrůvku, člen skupiny také, jenže plamínek v lucerně skoro zhasl. Jeden se snažil oheň zachránit a tak foukal a foukal, co mu síly stačili, ale bohužel, oheň vyhasl. Neměli oheň, který pro ně v tuto chvíli znamenal zdroj tepla. Byla jim zima, a proto jejich náčelník povolal tři muže, aby šli hledat oheň. A tak vyrazili, ušli nějaký kus cesty, ale oheň zatím nikde. Později se jim přihodila nepříjemná událost, vystopovali je lev a lvice, aby se zachránili, museli vylézt na malý strom. Lvi však neodešli a čekali, jestli náhodou nespadnou nebo neslezou. Muži měli hlad a jediné co bylo na dosah, byli listy toho stromu, všechny je snědli. Lvi ale stále byli pod stromem. Takže mužům nebývalo, než čekat dále. Z ničeho nic, když spali pod jedním z nich praskla větev. Rychle pelášil zpět na strom, měl štěstí, lvi už pod stromem nebyli, což znamenalo, že se mohli vydat dál. Při cestě za ohněm narazili také na stádo zvěře, v žaludku jim kručelo, ale měli smůlu, jelikož stádo bylo už moc daleko. Po dalším kusu cesty našli na stromě ptačí hnízda ve kterých byla vejce. Ty si vzal jeden z nich a když si od něho chtěl další vzít nějaké, dostal po palici. Pak to zkusil ještě jednou to mu jich pár sebral, ale praskly mu v ruce, takže se začali prát. Po rvačce si najednou všimli, že v dáli něco hoří. Hurá, oheň. Když došli na místo, kde viděli kouř, ohniště bylo jen vlažné, byli ale i tak šťastní. A ještě šťastnější byli, když tam našli maso. Ale jeden našel v ohništi také lidskou lebku, takže jim hned došlo, co je to za maso. Ihned ho vyplivli. Dali se na cestu a našli mršinu, ze které si vzali její kůži, na kterou později nalákali lidi s ohněm, tak aby nebyl oheň střežen. Jeden z nich se vydal pro oheň. Ale oheň přeci jen hlídali dva z protější skupiny, které musel zabít, aby se pro oheň dostal, vzal si pár klacků, které hořely a ostatní hodil do vody, aby tamta skupina neměla oheň. Díky tomu, že odlákali tamtu skupinu, zachránili dívku, která byla jejich zajatkyní a kterou později chtěli sníst. S dívkou byl zajatcem ještě také kluk, ten však nepřežil. Poté odešli s ohněm a dívka je stále sledovala. Když se usadili dva šli sbírat plody a jeden zůstal u ohně, u ohně zůstal ten, který kradl oheň, jelikož, když zabíjel ty dva kanibaly, jeden ho kousl do penisu. Přišla k němu ta dívka a viděla že je zraněný, a tak mu udělala chladivou mast z rostlin. A proto s nimi mohla zůstat. Kanibalové si je ale později našli, tak byli jejich záchranou mamuti, kteří přišli. Jednoho totiž napadlo, že by si mohl zkusit dostat mamuty na jejich stranu tím, že by jim dal trochu trávy na znamení toho, že jim nechtějí ublížit. To vyšlo. Jednoho dne dívku jeden ze skupiny znásilnil. Později jednomu ze skupiny spadl kámen na hlavu, dívka měla záchvat smíchu, oni ne, jelikož ještě smích nějak moc neznali. Další den se dívka vytratila, ale muži i tak šli na lov. Když se vrátili, tak se jednomu z nich stýskalo, a tak ji šel hledat. Po nějaké cestě našli chatrč z klacků, v ní ale jen nádobí. On hledal dál a spadl do bažiny. Odtamtud ho vylovil další kmen. Byl to kmen, ze kterého pocházela ta dívka. Lidé z toho kmene si ho vážili, jelikož věděli, že zachránil tu dívku. Uctívali ho a také chtěli, aby měl pohlavní styk s jednou z žen. Všichni se dívali, měli to jako takové divadlo. Jen té dívce se vůbec nelíbilo, co dělá. Ukázali mu také, jak rozdělat oheň. Mezitím ho šli hledat ti dva kamarádi, kteří ho našli a chtěli ho odtamtud dostat, jenže by šli přes ty bažiny a tak jim dívka ukázala, kudy jít. A tak byli zase čtyři. A tím se prohloubila láska mezi tím, který předtím kradl oheň a tou dívkou. Hodil tomu dalšímu něco na hlavu, a smáli se už všichni. Po nějaké době je přepadli, dva šli do boje a jeden se schoval s tou dívkou do jeskyně, ve které žila medvědice s mládětem, která napadla toho muže, vyvázl z toho, ale velmi raněný. Po této události už se vraceli k ostatním. Když se vrátili, všichni byli šťastní, že se vrátili s ohněm. Jenže z toho, jak se radovali, nechtěně jeden ze skupiny oheň uhasil. A tak chtěl jeden z těch tří mužů ukázat, jak se oheň rozdělává, jenže to ještě nikdy nedělal, a tak to neuměl. Naštěstí to dívka uměla a zase měli oheň. Na konci filmu si ti dva spolu sedli a dívka byla těhotná.</p><p class='dark:text-gray-300 text-gray-600'>Dozvěděl jsem se něco o tom jak těžký byl život v pravěku. Jak byl pro ně oheň důležitý. A jak šli do každého boje s odvahou, a jak museli stále hlídat, aby je někdo nenapadl nebo jim nesebral oheň.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Otázky</a></p><p class='dark:text-gray-300 text-gray-600'> <br>1. Používali klády stromů, klacky, oštěpy, kameny.</p><p class='dark:text-gray-300 text-gray-600'>2. Mohli za pomoci něho tepelně upravovat maso, vylepšovat zbraně, jako například oštěpy, aby měli tvrdší a špičatější hrot. Také to byl pro ně velmi důležitý zdroj tepla.</p><p class='dark:text-gray-300 text-gray-600'>3. Sociální vazby se vytvářeli například tak, že si byli jeden druhému nápomocní, drželi pospolu, měli spolu děti. Pečovali jeden o druhého. Projev radosti, smutku, který společně prožívali.</p><p class='dark:text-gray-300 text-gray-600'>4. Pro tu *hlavní* skupinu bylo typické, že měli velmi dobře vyvinutý čich. Pro skupinu, která je napadla na začátku filmu bylo typické, že byli vzhledem podobní opicím. Pro skupinu s rezatými vlasy bylo typické, že pojídali jiné lidi. Pro skupinu ze které pocházela dívka z filmu bylo typické, že si malovali na obličeje.</p>
-            </div>
-        </div>
-        
-        <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
-            <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
-                <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Boj o oheň</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film je o tom jak pravěcí lidí žili v pravěku. Ukazuje jejich styl života jako sběrači a jejich závislost na ohni, který potřebují na teplo, zpracování jídla a také výrobu základních zbraní. Ve filmu hrají několik tlup různých vyspělostí které jsou si navzájem ve většině případů nepřátelské. Hlavní příběh následuje skupinu tři lidí kteří byli vysláni aby našli oheň potom co na jejich tlupu zaútočila jiná tlupa a jejich oheň vyhasl.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Otázky</a></p><p class='dark:text-gray-300 text-gray-600'> <br>1. jednoduché dřevěné nebo kostěné oštěpy a klacky</p><p class='dark:text-gray-300 text-gray-600'>2. závisel na něm jejich život, mohli se u něho ohřívat když byla zima a mohly ho použít na zahnání predátorů</p><p class='dark:text-gray-300 text-gray-600'>3. Pomoc jeden druhému vedla ke sbližování</p><p class='dark:text-gray-300 text-gray-600'>4. Žili pohromadě ve tlupách a byli nepřátelští k ostatním tlupám</p>
-            </div>
-        </div>
+    <div id="materials" class="grid grid-cols-1 gap-2">
         
         <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
             <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
@@ -210,11 +102,41 @@
         
         <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
             <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
+                <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Boj o oheň</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film pojednával o životě v pravěku. Na začátku filmu můžeme vidět skupinu lidí, která žije v lese, v jeskyni, udržuje si oheň, což je pro ně velmi důležitá věc, už jen kvůli tomu, že si za pomoci něho mohli upravovat jídlo, zdokonalovat zbraně, jako například oštěp. A také to pro ně byla ochrana před zvířaty a před zimou. Jednoho dne na ně vtrhla jiná skupina, která jim chtěla sebrat území a oheň. Strhla se bitva, zabíjeli se hlava nehlava, bohužel skupina, která je napadla, vyhrála. Což pro ně znamenalo ztrátu obydlí, ohně i některých členů skupiny. Museli odejít. Bylo jasné, že museli opustit území, ale při hledání nového území je vystopovala smečka vlků, což znamenalo, že musí utíkat, co jim nohy stačí, někteří ale utéct nestihly. Ti, kteří utekli, se schovali na ostrůvku v mělkých vodách. Najednou k nim přišel ještě jeden člen jejich skupiny, který naštěstí nesl lucernu s malým plamínkem, který stihl uchránit. Když už byl blízko na pár metrů začal se potápět, jelikož kousek od ostrůvku byla voda hlubší. Všichni se vrhli pro lucernu, aby se nepotopila. Povedlo se, lucerna byla na ostrůvku, člen skupiny také, jenže plamínek v lucerně skoro zhasl. Jeden se snažil oheň zachránit a tak foukal a foukal, co mu síly stačili, ale bohužel, oheň vyhasl. Neměli oheň, který pro ně v tuto chvíli znamenal zdroj tepla. Byla jim zima, a proto jejich náčelník povolal tři muže, aby šli hledat oheň. A tak vyrazili, ušli nějaký kus cesty, ale oheň zatím nikde. Později se jim přihodila nepříjemná událost, vystopovali je lev a lvice, aby se zachránili, museli vylézt na malý strom. Lvi však neodešli a čekali, jestli náhodou nespadnou nebo neslezou. Muži měli hlad a jediné co bylo na dosah, byli listy toho stromu, všechny je snědli. Lvi ale stále byli pod stromem. Takže mužům nebývalo, než čekat dále. Z ničeho nic, když spali pod jedním z nich praskla větev. Rychle pelášil zpět na strom, měl štěstí, lvi už pod stromem nebyli, což znamenalo, že se mohli vydat dál. Při cestě za ohněm narazili také na stádo zvěře, v žaludku jim kručelo, ale měli smůlu, jelikož stádo bylo už moc daleko. Po dalším kusu cesty našli na stromě ptačí hnízda ve kterých byla vejce. Ty si vzal jeden z nich a když si od něho chtěl další vzít nějaké, dostal po palici. Pak to zkusil ještě jednou to mu jich pár sebral, ale praskly mu v ruce, takže se začali prát. Po rvačce si najednou všimli, že v dáli něco hoří. Hurá, oheň. Když došli na místo, kde viděli kouř, ohniště bylo jen vlažné, byli ale i tak šťastní. A ještě šťastnější byli, když tam našli maso. Ale jeden našel v ohništi také lidskou lebku, takže jim hned došlo, co je to za maso. Ihned ho vyplivli. Dali se na cestu a našli mršinu, ze které si vzali její kůži, na kterou později nalákali lidi s ohněm, tak aby nebyl oheň střežen. Jeden z nich se vydal pro oheň. Ale oheň přeci jen hlídali dva z protější skupiny, které musel zabít, aby se pro oheň dostal, vzal si pár klacků, které hořely a ostatní hodil do vody, aby tamta skupina neměla oheň. Díky tomu, že odlákali tamtu skupinu, zachránili dívku, která byla jejich zajatkyní a kterou později chtěli sníst. S dívkou byl zajatcem ještě také kluk, ten však nepřežil. Poté odešli s ohněm a dívka je stále sledovala. Když se usadili dva šli sbírat plody a jeden zůstal u ohně, u ohně zůstal ten, který kradl oheň, jelikož, když zabíjel ty dva kanibaly, jeden ho kousl do penisu. Přišla k němu ta dívka a viděla že je zraněný, a tak mu udělala chladivou mast z rostlin. A proto s nimi mohla zůstat. Kanibalové si je ale později našli, tak byli jejich záchranou mamuti, kteří přišli. Jednoho totiž napadlo, že by si mohl zkusit dostat mamuty na jejich stranu tím, že by jim dal trochu trávy na znamení toho, že jim nechtějí ublížit. To vyšlo. Jednoho dne dívku jeden ze skupiny znásilnil. Později jednomu ze skupiny spadl kámen na hlavu, dívka měla záchvat smíchu, oni ne, jelikož ještě smích nějak moc neznali. Další den se dívka vytratila, ale muži i tak šli na lov. Když se vrátili, tak se jednomu z nich stýskalo, a tak ji šel hledat. Po nějaké cestě našli chatrč z klacků, v ní ale jen nádobí. On hledal dál a spadl do bažiny. Odtamtud ho vylovil další kmen. Byl to kmen, ze kterého pocházela ta dívka. Lidé z toho kmene si ho vážili, jelikož věděli, že zachránil tu dívku. Uctívali ho a také chtěli, aby měl pohlavní styk s jednou z žen. Všichni se dívali, měli to jako takové divadlo. Jen té dívce se vůbec nelíbilo, co dělá. Ukázali mu také, jak rozdělat oheň. Mezitím ho šli hledat ti dva kamarádi, kteří ho našli a chtěli ho odtamtud dostat, jenže by šli přes ty bažiny a tak jim dívka ukázala, kudy jít. A tak byli zase čtyři. A tím se prohloubila láska mezi tím, který předtím kradl oheň a tou dívkou. Hodil tomu dalšímu něco na hlavu, a smáli se už všichni. Po nějaké době je přepadli, dva šli do boje a jeden se schoval s tou dívkou do jeskyně, ve které žila medvědice s mládětem, která napadla toho muže, vyvázl z toho, ale velmi raněný. Po této události už se vraceli k ostatním. Když se vrátili, všichni byli šťastní, že se vrátili s ohněm. Jenže z toho, jak se radovali, nechtěně jeden ze skupiny oheň uhasil. A tak chtěl jeden z těch tří mužů ukázat, jak se oheň rozdělává, jenže to ještě nikdy nedělal, a tak to neuměl. Naštěstí to dívka uměla a zase měli oheň. Na konci filmu si ti dva spolu sedli a dívka byla těhotná.</p><p class='dark:text-gray-300 text-gray-600'>Dozvěděl jsem se něco o tom jak těžký byl život v pravěku. Jak byl pro ně oheň důležitý. A jak šli do každého boje s odvahou, a jak museli stále hlídat, aby je někdo nenapadl nebo jim nesebral oheň.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Otázky</a></p><p class='dark:text-gray-300 text-gray-600'> <br>1. Používali klády stromů, klacky, oštěpy, kameny.</p><p class='dark:text-gray-300 text-gray-600'>2. Mohli za pomoci něho tepelně upravovat maso, vylepšovat zbraně, jako například oštěpy, aby měli tvrdší a špičatější hrot. Také to byl pro ně velmi důležitý zdroj tepla.</p><p class='dark:text-gray-300 text-gray-600'>3. Sociální vazby se vytvářeli například tak, že si byli jeden druhému nápomocní, drželi pospolu, měli spolu děti. Pečovali jeden o druhého. Projev radosti, smutku, který společně prožívali.</p><p class='dark:text-gray-300 text-gray-600'>4. Pro tu *hlavní* skupinu bylo typické, že měli velmi dobře vyvinutý čich. Pro skupinu, která je napadla na začátku filmu bylo typické, že byli vzhledem podobní opicím. Pro skupinu s rezatými vlasy bylo typické, že pojídali jiné lidi. Pro skupinu ze které pocházela dívka z filmu bylo typické, že si malovali na obličeje.</p>
+            </div>
+        </div>
+        
+        <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
+            <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
                 <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Boj o oheň</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film se odehrává v paleolitu, nebo též starší době kamenné. Sleduje kmen homo sapiens (člověka), který <a class='font-extrabold'>umí pracovat s ohněm a udržovat ho</a>, ale <a class='font-extrabold'>nedokážou ho rozdělat</a>. Právě okolo této schopnosti se odehrává celý film, který začíná, když tento kmen je pod útokem jiného, o dost méně vyvinutého a silnějšího kmene, který je zachytí nepřipravené. Během tohoto boje přijdou o velkou část svého kmene a z těch co přežili se jeden pokusil odnést jejich oheň sebou. Poté co se však shromáždí přeživší a pokusí se o záchranu jejich ohně, vychladne, a tak přichází o jejich zdroj ochrany před zvěří a tepla.</p><p class='dark:text-gray-300 text-gray-600'>Tímto začíná zápletka celého filmu, cesta za „tajemstvím“ výroby ohně. Na tuto cestu vyšlou tři silné jedince, kteří, podle mě, tráví příliš velkou část filmu cestováním. Ano, chápu že pěšky prošli opravdu velkou vzdálenost, ale nemuselo to být takhle zdlouhavě zobrazené ve filmu jako takovém. Na této jejich cestě je i vyobrazeno, jak člověk v této době nebyl na špičce potravní pyramidy, když se za nimi vydává pár šavlozubých tygrů, před kterými se unikají do koruny malého stromu. Následujícího dne, poté co se v té koruně stromu vyspali, se vydávají dále na cestu. Po dlouhé době cestování naráží toto trio na první kmen. Tento kmen, který nebyl moc dobře strategicky umístěn, však praktikuje kanibalismus, a tak <a class='font-extrabold'>musí přijít na způsob, jak od nich získat buď oheň, či jak rozdělat oheň.</a> Poté co dva z nich odlákají jejich pozornost, se třetí vydává pro jejich oheň. Když však bere část jejich ohně, tak na něj zaútočí jeden z kanibalů, kterého se mu podaří zabít. Po jejich souboji si všímá mladé dívky z jiného kmene, kterou připravovali k jídlu. Tuto dívku vysvobodí a ona je na oplátku zavede k jejímu kmenu.</p><p class='dark:text-gray-300 text-gray-600'>Její kmen, který je obklopen bažinou, což je dobrá ochrana před divokou zvěří, je však mnohem pokročilejší a dokáže si nejen rozdělat oheň, ale mají lepší zbraně, obydlí a sociální řád. Oproti předchozím kmenům, ve kterých byli všechny ženy a děti všech, má každý svou a stará se o své děti, ne ostatních. Do tohoto kmene však nejdřív zavede pouze jednoho z nich, kterého její kmen zajme a využijí ho pro pobavení, když na noc za ním pošlou velmi tlustou členku jejich kmene. Následující den ho zavedou do jeskyně, ve které ho naučí rozdělávat oheň. Tuto noc dorazí jeho dva přátelé, omráčí ty, kteří měli hlídku a ukradli jejich zbraně. Následně se všichni tři, a navíc mladá dívka, kterou zachránili od kanibalů se vydávají na cestu zpět k jejich kmenu.</p><p class='dark:text-gray-300 text-gray-600'>Co se týče zbraní těchto kmenů, tak první a kanibalské kmeny používali oštěpy vyráběné pouze ze dřeva, opálené, kterým následně naostřili špičky pomocí kamenů. Méně vyvinutý kmen, který na začátku zaútočil na první kmen používal velmi primitivní zbraně ve stylu kyj, klacek anebo velcí jedinci mohli používat kusy kmenu. Kmen, se kterým se seznamujeme ke konci filmu, používal oštěpy, ale hlavně měl šípy s takzvanými atlatly, což jsou takové předchůdce luků, používané ke házení šípů na nepřátele/kořist.</p>
             </div>
         </div>
         
+        <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
+            <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
+                <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Boj o oheň</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film je o tom jak pravěcí lidí žili v pravěku. Ukazuje jejich styl života jako sběrači a jejich závislost na ohni, který potřebují na teplo, zpracování jídla a také výrobu základních zbraní. Ve filmu hrají několik tlup různých vyspělostí které jsou si navzájem ve většině případů nepřátelské. Hlavní příběh následuje skupinu tři lidí kteří byli vysláni aby našli oheň potom co na jejich tlupu zaútočila jiná tlupa a jejich oheň vyhasl.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Otázky</a></p><p class='dark:text-gray-300 text-gray-600'> <br>1. jednoduché dřevěné nebo kostěné oštěpy a klacky</p><p class='dark:text-gray-300 text-gray-600'>2. závisel na něm jejich život, mohli se u něho ohřívat když byla zima a mohly ho použít na zahnání predátorů</p><p class='dark:text-gray-300 text-gray-600'>3. Pomoc jeden druhému vedla ke sbližování</p><p class='dark:text-gray-300 text-gray-600'>4. Žili pohromadě ve tlupách a byli nepřátelští k ostatním tlupám</p>
+            </div>
+        </div>
+        
     </div>
+    <script>
+        function shuffleDivs() {
+            const parent = document.getElementById('materials');
+            const children = Array.from(parent.children);
+
+            for (let i = children.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [children[i], children[j]] = [children[j], children[i]];
+            }
+            for (let i = children.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [children[i], children[j]] = [children[j], children[i]];
+            }
+
+            children.forEach(child => parent.appendChild(child));
+        }
+        window.onload = shuffleDivs;
+    </script>
 </div>
 
     </div>
@@ -222,28 +144,30 @@
     
     <div class="mt-2 flex flex-grow">
     </div>
-    
-    <!-- Footer -->
-<footer class="py-6 px-6 dark:bg-gray-800 bg-white">
-    <div class="sm:px-6 lg:px-8 container mx-auto max-w-7xl">
-        <div class="flex justify-between items-center">
-            <div class="text-center md:text-left text-gray-600 dark:text-gray-300">
-                <h5 class="text-lg font-semibold">mares-archives</h5>
-                <p class="py-2">©  All rights reserved.</p>
-            </div>
-            <a href="https://github.com/mares-archives" target="_blank" class="ml-3 my-auto flex flex-row ">
 
-                <svg class="w-5 my-auto" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path fill="white"
-                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                </svg>
-                <p
-                    class="ml-2 my-auto dark:text-gray-300 dark:hover:text-gray-500 text-gray-600 hover:text-gray-800 rounded-md font-medium">
-                    Github</p>
-            </a>
+    <!-- Footer -->
+<footer class="py-6 px-6 bg-gray-800 ">
+    <div class="sm:px-6 lg:px-8 container mx-auto max-w-7xl">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center  text-gray-300">
+                <h5 class="text-lg font-semibold">mares-archives</h5>
+                <p class="py-2">© Mares Archives mantainers - All rights reserved.</p>
+            </div>
+            <div class="flex flex-col items-center text-center  text-gray-300">
+                <a href="https://github.com/mares-archives" target="_blank" class="flex flex-row">
+                    <svg class="w-5 my-auto" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512">
+                        <path fill="white"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                    </svg>
+                    <p class="ml-2 my-auto text-gray-300 hover:text-gray-400 font-medium rounded-md">
+                        Github</p>
+                </a>
+                <p class="py-2 text-gray-300 hover:text-gray-400 font-medium">da.mares.archive@gmail.com</p>
+            </div>
         </div>
     </div>
 </footer>
 </body>
+
 </html>

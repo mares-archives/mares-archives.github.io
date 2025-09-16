@@ -1,7 +1,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head class="dark:bg-gray-800 bg-gray-200">
+
+<head class="bg-gray-200">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/logo.png">
@@ -9,198 +10,89 @@
 <script src="/assets/js/preline.js"></script>
 
 <link rel="stylesheet" href="/assets/css/font-awesome-6.4.1.css">
-
-
     <title>Materials for Trilogie Ohněm a mečem, Potopa, Pan Wolodyjowksi</title>
 </head>
+
 <body class="flex flex-col min-h-screen">
-    
-<header class="px-2 fixed top-0 left-0 right-0 z-50 w-full flex items-center justify-center flex-nowrap">
-    <nav class="mt-2 mx-2 py-1 px-4 md:h-20 relative w-full bg-white border border-gray-200 rounded-[26px] md:flex md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto dark:bg-gray-800 dark:border-gray-700" aria-label="Global">
+    <header class=" fixed top-0 left-0 right-0 z-50 w-full flex items-center justify-center flex-nowrap">
+    <nav
+        class="mt-2 mx-2 py-1 pl-4 pr-4 md:pr-6 md:h-20 relative w-full border rounded-[16px] md:rounded-[26px] md:flex md:items-center md:justify-between  bg-gray-800 border-gray-700">
         <div class="flex items-center justify-between">
-            <a class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white w-100" href="/">
+            <a class="inline-flex items-center gap-x-2 text-xl font-semibold dark:text-white w-100"
+                href="/">
                 <img class="w-12 h-auto" src="/assets/logo.png" alt="Logo">
                 <div class="hover:text-blue-600">
                     Mares archives
                 </div>
             </a>
             <div class="md:hidden">
-                <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
-                    <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                <button type="button"
+                    class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                    data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation"
+                    aria-label="Toggle navigation">
+                    <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                     </svg>
-                    <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
                     </svg>
                 </button>
             </div>
         </div>
-        <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
-            <div class="flex mt-6 md:mt-0 md:pl-7 flex-col gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7">
+        <div id="navbar-collapse-with-animation"
+            class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
+            <div
+                class="flex mt-6 md:mt-0 md:pl-7 flex-col gap-y-4 gap-x-0 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7">
                 
-                    
-                    
-                    
-                    
-
-                    
                 
-                    
-                    
-                    
-                    
-
-                    
-                        
-                            <a class="font-medium md:py-4 text-gray-500 hover:text-gray-400 dark:text-gray-400 hover:text-gray-500"
-                               href="/referats"
-                               >
-                                Referats
-                            </a>
-                        
-                    
                 
-                    
-                    
-                    
-                    
-
-                    
                 
-                    
-                    
-                    
-                    
-
-                    
                 
 
+                
+                
+                
+                
+                
+                
 
+                
+                
+                <a class="font-medium md:py-4 text-gray-500 hover:text-gray-400 dark:text-gray-400 hover:text-gray-500"
+                    href="/referats" >
+                    Referats
+                </a>
+                
+                
+                
+                
+                
+                
+                
 
+                
+                
+                
+                
+                
+                
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                
+                
 
             </div>
         </div>
     </nav>
 </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     <div class="mt-20 md:mt-28">
         
 <div class="mx-2">
-    <div class="grid grid-cols-1 gap-2">
-
-        
-        <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
-            <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
-                <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Ohněm a mečem</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film začíná záběrem na člověka v lese, kterého přepadli lupiči, okolo zrovna jeli náměstek s vojáky, kteří se vraceli z Krymu a zachránili ho. Dále se náměstek zastavil v krčmě, kde se seznámil se svými budoucími přáteli. Když pokračovali domů z krčmy, zachránili po cestě dvě šlechtičny. Přijeli do vesnice, kde šlechtična se sirotou žila, žili s ní i čtyři její synové a jeden kozák (Bohun), kterého již také brala za syna. A pak přeskočila mezi sirotou Helenou a náměstkem Janem jiskra a hned se do sebe zamilovali. Ale Jan se dozvěděl, že má naplánovanou svatbu s Bohunem. A tak se Jan rozhodl, že se s Helenou zasnoubí, zasnoubil se a Helena byla šťastná, jak ještě nikdy, jelikož věděla, že Bohun není dobrý člověk. Když pak Jan se svou skupinou pluli po řece, vyslal jednoho, aby do vesnice dovezl dopis. Pak je napadli a unesli Jana, za kterého jeden muž zaplatil 4 tisíce, aby ho nezabili. Ten mu udělil svobodu. Pak byla válka, kozáci se zbraněmi proti mužům na koních, začalo pršet a oni předstírali, že jdou do boje, ale šlo jim jen o to, aby se země nasákla vodou a koně se v ní museli brodit, tím proti nim byli další den ve veliké výhodě. Poté dorazil posel s dopisy do krčmy, kde byl i Bohun, přečetl si dopisy, a to nebylo dobré. Naštval se, jel do vesnice a pohádal se se šlechtičnou a jejími syny. Všechny je zabil, to celé viděla i Helena. Pak pan Zagloba všechny ve vesnici opil, aby se mohl dostat z vesnice, Bohuna svázal a Helenu unesl. Všech se ptal kudy na Lubiny, ale byla to jen lest, aby si lidé mysleli, že tam jede, ve skutečnosti jel jinam. Schoval se i s Helenou v lese a vlci jim sežrali koně. Bohun se svými lidmi je ale pořád pronásledovali a chtěli na ně zaútočit, ale ubránili se. Jana nakonec propustili a šel hledat Helenu do vesnice, kde žila, ta byla ale spálená. Když se z toho vzpamatoval, našli pana Zaglobu, ale bez Heleny, ta měla být údajně v Baru, ale tam nebyla, jelikož jí stihl unést Bohun. Helena již byla u věštkyně, kam jí Bohun odvedl. Mezitím pan Zagloba se svými lidmi vtrhli na veselku, kde se opili a Bohun ho nakonec zajal a svázal u prasat. Jemu se ale povedlo se odtamtud dostat, vylezl na seník a začal bojovat se všemi, co ho chtěli zabít. Nakonec tedy jeli na Zbaraž, Jan se od ostatních oddělil a jel sám hledat Helenu. Pak se pan Zagloba a pan Wolodyjowský potkali s Bohunem, pan Wolodyjowský s ním bojoval a zabil ho, tedy myslel si to, ale pletl se, Bohun přežil. Poté se potkali s Janovým sluhou, který se stihl skamarádit s Bohunem, Bohun ho totiž poslal k vědmě do jeskyně za Helenou. On ale kamarádství s Bohunem pouze předstíral, a tak se vydali do jeskyně, vědmu i jejího ochránce zastřelili. Zatloukli jí do srdce kůl a šli pro Helenu. Pak se vrátili za Janem. Byla válka a pan Podbipěnta se konečně dočkal a usekl tři hlavy najednou. A bylo potřeba, aby jeden šel do tábora těch druhých, šel pan Podbipěnta, ale nevrátil se, a tak šel Jan. Zprávu vyřídil. A film končí tím, že Helena a Jan jsou již spolu a Bohun dostal od Jana milost a byl propuštěn.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Potopa</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film začíná příjezdem Ondřeje Kmitice a jeho přátel pro jeho dědictví (dívku). Jeho přátelé nebyli vůbec vychovaní a dělali, co neměli, například zneuctili mrtvé vojáky, tím že ničili jejich obrazy nebo páchali nemravnosti s vesnickými dívkami, kterým říkali sýkorky. Dívka ho zprvu brala jako fajn muže, ale po tom, co se dozvěděla tyto okolnosti ho přestala mít ráda. A tak, když se Kmitic vrátil, řekla mu, že si nevezme člověka, který má na svědomí slzy a krev. Následně se jeho přátelé zase opili a dostali se do konfliktu s Butrimy, kteří je zabili. Kmitic je chtěl pomstít, a tak vypálil vesnici Volomontoviče. Dívka ho za to chtěla vyhodit z domu, ale dopadlo to tak, že jí Kmitic unesl a vyhrožoval, že když se k němu pan Wolodyjowský nebo pan Zagloba budou chtít dostat, vyhodí dům, ve kterém se nachází on i s tou dívkou do povětří. To skončilo soubojem mezi panem Wolodyjowským a Kmiticem, souboj vyhrál pan Wolodyjowský, Kmitic byl ale raněn, a tak ho museli ošetřit, jak pravila rytířská pravidla. Pan Wolodyjowský dal Kmiticovi možnost, napravit si reputaci a to tak, že měl naverbovat vojáky a jít bojovat. A chvíli po tom se z Polska stala součást Švédska. Kmitic také vyznal lásku té jeho dívce, ta uvěřila, že je z něho dobrý člověk, spřátelil se s knížetem, přísahal na krucifix, že knížete do jeho smrti neopustí. Slib ale porušil. Ale podařilo se mu zachránit vězně, kterými byli pan Wolodyjowský, pan Zagloba a další. Kmitic a další následně začali vyhrožovat knížeti. Nakonec se jim ale odvděčil tím, že začal Kmitice pomlouvat před tou dívkou. Kmitic se následně přejmenoval na Babiniče a chtěl jet za králem do Švédska, nakonec jel do Slezska. Mezitím na hradě přivítali knížete i s tou dívkou, který na ní chtěl udělat dojem a poslal jí košík štěňátek. Jí se povedlo zachránit před mrtí pana Brauna, kterého chtěl kníže nechat zabít. V tu chvíli zase Babinič našel v lese mrtvoly a o kousek dál vojáky a knížete, byl schovaný za stromem a odposlouchával, co si říkají, měli v plánu zničit jeden klášter, a tak se Babinič na ten klášter vydal a v něm prozradil, co se chystá. Ti mu moc nevěřil, ale nakonec dali na jeho rady a začali se na bitvu připravovat. Začala bitva a Babinič je zachránil svým odvážným krokem, zneškodněním bomby, ze které vytáhl doutnák a zabořil ho do sněhu. Proti útočníci nasadili větší kalibr, velké dělo. To by pro klášter znamenalo pohromu, a tak se Babinič vydal tajně zneškodnit to největší dělo, a to se mu povedlo. Jak se dalo čekat, Babiniče zajali a darovali ho plukovníkovi. Ten ho mučil, popálil mu velkou část kůže. Babiničovi přátelé ho ale zachránili a dali mu kořalku, aby ho postavila na nohy. Následně čekalo totéž i plukovníka, který to dělal Babiničovi. Dozvídáme se také, co di dříve mysleli o konopném semeni: Konopné semeno je tajný recept na důvtip, musí se žvýkat tím potom rozum velice sílí, jelikož v konopí je olej, od kterého pak člověku roste hlava, a aby nerostlo více břicho, než hlava musí se ještě pít hodně vína, aby olej plaval na povrchu, víno pak stoupá do hlavy a zvedá tam ten olej s sebou. Následně můžeme vidět scénu, kde Se kníže Bohuslav přiznává, že by si chtěl vzít tu dívku. Ta mu pak chtěl vrazit do těla dýku, to se jí ale nepovedlo, ale naštěstí ho někdo vzal po hlavě, a tak mohla ona i s tetou utéct. Pak se Babinič utkal v souboji s Bohuslavem. Babinič nad ním vyhrával, a tak mu Bohuslav slíbil první poslední. Pak se Babinič i s dívkou vrátili domů.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Pan Wolodyjowský</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film začíná setkáním pana Zagloby a Jiřího Michala Wolodyjowského, kterému před nedlouhou dobou skonala jeho nastávající žena. A z toho důvodu se dal pan Wolodyjowský k mnichům. A tak se pan Zagloba rozhodl, že pana Wolodyjowského dostane z kláštera tím, že mu řekl, že umírá jeho přítel Ketling. Byla to ale jen léčka, jak ho dostat z kláštera pryč. Wolodyjowský také potkal svou sestru, která jela lesem ještě se dvěma dívkami, Baškou a Krystýnou (Kryšou). Baška se pak s Michalem učila šermovat, mezitím Kryša hrála na hudební nástroj. Kryša se mu velice zalíbila, a tak jí požádal o ruku, nakonec souhlasila, že si ho vezme. Mezitím, co Michal bojoval s Tatary, Kryše se dvořil Ketling, ta mu ale řekla, že si ho vzít nemůže. To Ketlinga ranilo, a tak se rozhodl odjet, Kryša Ketlinga milovala, a tak se rozhodla, že raději půjde do kláštera. Řekla to i Michalovi, který se později od Bašky dozvěděl, že je to kvůli Ketlingovi, to se mu vůbec nelíbilo a rozhodl se, že si to s ním pojede vyřídit. Nakonec Michal přijel i s Ketlingem, a řekl, že než aby ho do konce života proklínali, bude lepší, když jim v lásce bránit nebude. Z toho byla Baška smutná a svěřila se Michalovi, že ho miluje, načež se zasnoubili. Rozhodli se, že o půlnoci vyrazí do války, Baška chtěl jít s Michalem, on jí to nechtěl dovolit, ale nakonec s nimi jela. Michal jí ukázal, jak to bude probíhat a kde je kdo schovaný. Někteří z protivníků uprchli a jeli proti Bašce, jednoho sestřelila ale pak spadla do propasti, kde jí začal objímat Asia (Efendi). Až chvíli poté přijel Michal. Asia milovala Evka, on ale vždy miloval Bašku. Nakonec se vydal s Asiem a Evkou, když jeli požádat jejího otce o požehnání. Asia se zdržel a bavil se přitom s Baškou, řekl jí, že jí miluje, ona ho praštila po hlavě a utekla i s oběma koni. Jednoho koně jí sežrali vlci a s druhým se propadla do ledu, ona přežila, ale kůň se utopil. Nakonec ale došla do vesnice a zachránila se. V tu chvíli se ale Asia mstil otci Evky, jí a celé vesnici, vesnici zapálil, jí odvezl a jejího otce zabil. Baška pak už byla zase s Michalem. Asia nabodli na kůl a zapálili ho. A v tu chvíli již Turci táhli. Pak byla rada, jak na Turky, zeptali se pana Wolodyjowského, jelikož měl z nich největší zkušenosti. On řekl, že by měli bojovat na dolním hradě a až bude dobyt, měli by se přemístit na horní hrad. Všichni s ním souhlasili a byli odhodláni jít bojovat. A tak museli přísahat. Pan Wolodyjowský: <a class='font-bold'>"Slibuji a přísahám, že jako velitel horního hradu radou pověřený, dokud nepadnu, nepřítele do hradu nevpustím, z hradu neustoupím a bílý prapor nevyvěsím, i kdybych měl sám najít svůj hrob pod troskami. K tomu mi dopomáhej Bůh i svatý kříž. Amen."</a> Pan Ketling: <a class='font-bold'>"Slibuji, že za všechna dobrodiní, kterých se mi v této vlasti dostalo, budu do poslední kapky krve hrad bránit, a spíše v jeho rozvalinách zemřu, než aby jeho hradby překročila noha nepřítele. K tomu mi dopomáhej Bůh i svatý kříž. Amen."</a> Turci šli proti nim i se svazky slámy, které házeli do příkopu před hradem, aby se přes něho dostali, měli i žebříky, aby hradby přelezli, obojí ale krásně hoří, a tak jim to zapálili. Tím skončila bitva v prvním dni, přes noc Turci hrad zaminovali a vyhodili do povětří, ještě den trvala bitva na tomto hradě a pak se Michal, Ketling i vojáci přemístili na horní hrad. Baška se s ním ještě stihla pro jistotu rozloučit. Další den již bojovali z horního hradu a podařilo se jim i trefit prachárnu (místo, kde byl uložen střelný prach). Ale pak pan Wolodyjowský dostal rozkaz, že se mají vzdát, že byla uzavřena dohoda o neútočení. Všichni vojáci tedy z hradu odešli, až na Michala a Ketlinga. Baška se snažila k Michalovi dostat, jelikož dostala jeho vzkaz. Ketling vyhodil hrad do povětří tím, že zapálil sklad se střelným prachem. Udělali to proto, aby neporušili přísahu, kterou dali, že se nevzdají.</p>
-            </div>
-        </div>
-        
-        <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
-            <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
-                <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Ohněm a mečem</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film začíná tím že na Bohdana Chmelnického zaútočí Tataři. V tom ho ale zachrání Janem Skřetovským, který právě přijel z Krymu. To ale ještě netušil, že zabránil léčce na Chmelnického, který nesl cenné listiny, v kterých král podporuje kozáky proti šlechtě.</p><p class='dark:text-gray-300 text-gray-600'>Když Jan se ale dozví že válka s Tatary se nestane kvůli senátu, předpověděl že to bude znamenat vzpouru a rozhodl se vyjet jako vyslanec do Záporožské Siče, kde teď velí Chmelnický. Když ale dojel do Siče, byl přepaden kozáky a dovlečen před Chmelnického jako zajatec. Chmelnický ho vykoupí, ale nabídku nepřijme. Jan stejně ale nemůže odejít, protože hned na to na ně zaútočí malá armáda Poláků. To ale odrazili pomocí silného deště, který způsobil bahno, které bylo na koně Polské armády moc.</p><p class='dark:text-gray-300 text-gray-600'>Po válce jim ale přišla špatná správa, že král, který byl s nimi spřízněný umřel. Tak začala válka mezi knížem a kozáky s Chmelnickým včele, který se také spojil s Tatary.</p><p class='dark:text-gray-300 text-gray-600'>Ve filmu je vyobrazeno obléhání Zbaraže. Ten Chmelnický s Tatary obléhaly dlouhou dobu dokud pevnosti nezačali docházet zásoby jídla a střeliva. Včas ale dorazí král a nastolí s Chmelnickým mír, čímž končí válka.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Potopa</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Pár filmů se odehrává po minulém filmu a vypráví o konfliktu mezi knížem hejtmanem, který chtěl na trůn usadit Švédského krále a konfederací, která to brala za zradu a chtěla tomu zabránit a považovala hejtmana za zrádce Polska.  </p><p class='dark:text-gray-300 text-gray-600'>Hlavní postavou filmu je Ondřej Kmitic, který celé dva filmy byl <a class='font-bold'>"tajně"</a> hájil zájmy konfederace, ale zároveň pracoval pro knížete hejtmana. Zpočátku se zdál plně oddaný hejtmanovy, který také zkoušel jeho oddanost a mu zaručoval bezpečnost jeho budoucí ženě. Postupem času bylo, ale zřejmé že Kmitic (a později pod krycím jménem Babynič) také považuje hejtmana za zrádce potom co využil svou pozici aby sabotoval usilí hejtmana a Švédska.</p><p class='dark:text-gray-300 text-gray-600'>První film vypráví o počátku konfliktu, je obsáhnuta scéna, kde je hejtmanem Švédský král vyhlášen jako budoucí král Polska a následný odpor šlechty, která si stála za Polskou úctou. Šlechta je ale zajata a určena k zastřelení, to se ale nepodaří a šlechta uteče a spojí se Kmiticem. Ty pak začnou odporovat proti hejtmanovy a knížeti Bohuslavovy, který byl hejtmanem najat, aby se vypořádal s konfederací.</p><p class='dark:text-gray-300 text-gray-600'>Druhý film už je jen o čím dál větším odporu který Kmitic a spol způsobují hejtmanovy a knížeti Bohuslavovy. Většina filmu se odehrála na katedrále na Slezsku, který také vede odpor proti Švédům a společně s konfederací se proti nim brání. Při obraně je také vyobrazen obrovský kanón, který snadno boural hradby katedrály, naštěstí ho Kmitic v noci zneškodnil, když se tajně vplížil ke kanónu a roztrhal ho pomocí správě umístěného střelného prachu.</p><p class='dark:text-gray-300 text-gray-600'>Film následně končí finální bitvou mezi konfederací a armádou Knížete Bohuslava, kterou Bohuslav prohrává a Kmitic si očišťuje jméno.  </p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Pan Wolodyjowský</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film neočekávaně vypráví o životě Pana Wolodyjowského. Děj začíná v roce 1668, Polsko je ve špatném stavu, protože lidi ztrácí důvěru v Polsko jako vlast. Bylo tedy potřeba někoho jako příklad Polsku, aby mělo ještě šanci se ubránit před nájezdy nepřátel. Proto byl Pan Wolodyjowský poslán na do Kamence.</p><p class='dark:text-gray-300 text-gray-600'>Trochu později v roce 1670 se situace v Polsku stále zhoršovala, na trůn usedl neschopný Michal Korybut Wisniowiecký a Polské hranice byly už střeženy jen zřídka. Hranice také stále bránil Pan Wolodyjowský, který byl pozván na radu, kde měli vyřešit jak pokračovat s obranou Polska. Přestože zdroje docházejí Pan Wolodyjowský a spol. sestaví strategii jak pro zatím odrážet nepřátelská vojska.</p><p class='dark:text-gray-300 text-gray-600'>To se jim také ze začátku daří, i když jsou to bližší boje než by si měšťané představovali a prosí, aby se města vzdala. Tomu ale Pan Wolodyjowský a spol. odporují a tak bojují dále, dokud se jim nedostane že panovník podepsal dohodu. Pan Wolodyjowský a jeho blízcí ví co to pro Polsko znamená a tak spáchali sebevraždu.</p><p class='dark:text-gray-300 text-gray-600'>To však probudí v Polsku vlnu a o rok později Polsko rozdrtí Turecké vojsko.</p>
-            </div>
-        </div>
+    <div id="materials" class="grid grid-cols-1 gap-2">
         
         <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
             <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
@@ -210,11 +102,41 @@
         
         <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
             <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
+                <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Ohněm a mečem</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film začíná záběrem na člověka v lese, kterého přepadli lupiči, okolo zrovna jeli náměstek s vojáky, kteří se vraceli z Krymu a zachránili ho. Dále se náměstek zastavil v krčmě, kde se seznámil se svými budoucími přáteli. Když pokračovali domů z krčmy, zachránili po cestě dvě šlechtičny. Přijeli do vesnice, kde šlechtična se sirotou žila, žili s ní i čtyři její synové a jeden kozák (Bohun), kterého již také brala za syna. A pak přeskočila mezi sirotou Helenou a náměstkem Janem jiskra a hned se do sebe zamilovali. Ale Jan se dozvěděl, že má naplánovanou svatbu s Bohunem. A tak se Jan rozhodl, že se s Helenou zasnoubí, zasnoubil se a Helena byla šťastná, jak ještě nikdy, jelikož věděla, že Bohun není dobrý člověk. Když pak Jan se svou skupinou pluli po řece, vyslal jednoho, aby do vesnice dovezl dopis. Pak je napadli a unesli Jana, za kterého jeden muž zaplatil 4 tisíce, aby ho nezabili. Ten mu udělil svobodu. Pak byla válka, kozáci se zbraněmi proti mužům na koních, začalo pršet a oni předstírali, že jdou do boje, ale šlo jim jen o to, aby se země nasákla vodou a koně se v ní museli brodit, tím proti nim byli další den ve veliké výhodě. Poté dorazil posel s dopisy do krčmy, kde byl i Bohun, přečetl si dopisy, a to nebylo dobré. Naštval se, jel do vesnice a pohádal se se šlechtičnou a jejími syny. Všechny je zabil, to celé viděla i Helena. Pak pan Zagloba všechny ve vesnici opil, aby se mohl dostat z vesnice, Bohuna svázal a Helenu unesl. Všech se ptal kudy na Lubiny, ale byla to jen lest, aby si lidé mysleli, že tam jede, ve skutečnosti jel jinam. Schoval se i s Helenou v lese a vlci jim sežrali koně. Bohun se svými lidmi je ale pořád pronásledovali a chtěli na ně zaútočit, ale ubránili se. Jana nakonec propustili a šel hledat Helenu do vesnice, kde žila, ta byla ale spálená. Když se z toho vzpamatoval, našli pana Zaglobu, ale bez Heleny, ta měla být údajně v Baru, ale tam nebyla, jelikož jí stihl unést Bohun. Helena již byla u věštkyně, kam jí Bohun odvedl. Mezitím pan Zagloba se svými lidmi vtrhli na veselku, kde se opili a Bohun ho nakonec zajal a svázal u prasat. Jemu se ale povedlo se odtamtud dostat, vylezl na seník a začal bojovat se všemi, co ho chtěli zabít. Nakonec tedy jeli na Zbaraž, Jan se od ostatních oddělil a jel sám hledat Helenu. Pak se pan Zagloba a pan Wolodyjowský potkali s Bohunem, pan Wolodyjowský s ním bojoval a zabil ho, tedy myslel si to, ale pletl se, Bohun přežil. Poté se potkali s Janovým sluhou, který se stihl skamarádit s Bohunem, Bohun ho totiž poslal k vědmě do jeskyně za Helenou. On ale kamarádství s Bohunem pouze předstíral, a tak se vydali do jeskyně, vědmu i jejího ochránce zastřelili. Zatloukli jí do srdce kůl a šli pro Helenu. Pak se vrátili za Janem. Byla válka a pan Podbipěnta se konečně dočkal a usekl tři hlavy najednou. A bylo potřeba, aby jeden šel do tábora těch druhých, šel pan Podbipěnta, ale nevrátil se, a tak šel Jan. Zprávu vyřídil. A film končí tím, že Helena a Jan jsou již spolu a Bohun dostal od Jana milost a byl propuštěn.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Potopa</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film začíná příjezdem Ondřeje Kmitice a jeho přátel pro jeho dědictví (dívku). Jeho přátelé nebyli vůbec vychovaní a dělali, co neměli, například zneuctili mrtvé vojáky, tím že ničili jejich obrazy nebo páchali nemravnosti s vesnickými dívkami, kterým říkali sýkorky. Dívka ho zprvu brala jako fajn muže, ale po tom, co se dozvěděla tyto okolnosti ho přestala mít ráda. A tak, když se Kmitic vrátil, řekla mu, že si nevezme člověka, který má na svědomí slzy a krev. Následně se jeho přátelé zase opili a dostali se do konfliktu s Butrimy, kteří je zabili. Kmitic je chtěl pomstít, a tak vypálil vesnici Volomontoviče. Dívka ho za to chtěla vyhodit z domu, ale dopadlo to tak, že jí Kmitic unesl a vyhrožoval, že když se k němu pan Wolodyjowský nebo pan Zagloba budou chtít dostat, vyhodí dům, ve kterém se nachází on i s tou dívkou do povětří. To skončilo soubojem mezi panem Wolodyjowským a Kmiticem, souboj vyhrál pan Wolodyjowský, Kmitic byl ale raněn, a tak ho museli ošetřit, jak pravila rytířská pravidla. Pan Wolodyjowský dal Kmiticovi možnost, napravit si reputaci a to tak, že měl naverbovat vojáky a jít bojovat. A chvíli po tom se z Polska stala součást Švédska. Kmitic také vyznal lásku té jeho dívce, ta uvěřila, že je z něho dobrý člověk, spřátelil se s knížetem, přísahal na krucifix, že knížete do jeho smrti neopustí. Slib ale porušil. Ale podařilo se mu zachránit vězně, kterými byli pan Wolodyjowský, pan Zagloba a další. Kmitic a další následně začali vyhrožovat knížeti. Nakonec se jim ale odvděčil tím, že začal Kmitice pomlouvat před tou dívkou. Kmitic se následně přejmenoval na Babiniče a chtěl jet za králem do Švédska, nakonec jel do Slezska. Mezitím na hradě přivítali knížete i s tou dívkou, který na ní chtěl udělat dojem a poslal jí košík štěňátek. Jí se povedlo zachránit před mrtí pana Brauna, kterého chtěl kníže nechat zabít. V tu chvíli zase Babinič našel v lese mrtvoly a o kousek dál vojáky a knížete, byl schovaný za stromem a odposlouchával, co si říkají, měli v plánu zničit jeden klášter, a tak se Babinič na ten klášter vydal a v něm prozradil, co se chystá. Ti mu moc nevěřil, ale nakonec dali na jeho rady a začali se na bitvu připravovat. Začala bitva a Babinič je zachránil svým odvážným krokem, zneškodněním bomby, ze které vytáhl doutnák a zabořil ho do sněhu. Proti útočníci nasadili větší kalibr, velké dělo. To by pro klášter znamenalo pohromu, a tak se Babinič vydal tajně zneškodnit to největší dělo, a to se mu povedlo. Jak se dalo čekat, Babiniče zajali a darovali ho plukovníkovi. Ten ho mučil, popálil mu velkou část kůže. Babiničovi přátelé ho ale zachránili a dali mu kořalku, aby ho postavila na nohy. Následně čekalo totéž i plukovníka, který to dělal Babiničovi. Dozvídáme se také, co di dříve mysleli o konopném semeni: Konopné semeno je tajný recept na důvtip, musí se žvýkat tím potom rozum velice sílí, jelikož v konopí je olej, od kterého pak člověku roste hlava, a aby nerostlo více břicho, než hlava musí se ještě pít hodně vína, aby olej plaval na povrchu, víno pak stoupá do hlavy a zvedá tam ten olej s sebou. Následně můžeme vidět scénu, kde Se kníže Bohuslav přiznává, že by si chtěl vzít tu dívku. Ta mu pak chtěl vrazit do těla dýku, to se jí ale nepovedlo, ale naštěstí ho někdo vzal po hlavě, a tak mohla ona i s tetou utéct. Pak se Babinič utkal v souboji s Bohuslavem. Babinič nad ním vyhrával, a tak mu Bohuslav slíbil první poslední. Pak se Babinič i s dívkou vrátili domů.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Pan Wolodyjowský</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film začíná setkáním pana Zagloby a Jiřího Michala Wolodyjowského, kterému před nedlouhou dobou skonala jeho nastávající žena. A z toho důvodu se dal pan Wolodyjowský k mnichům. A tak se pan Zagloba rozhodl, že pana Wolodyjowského dostane z kláštera tím, že mu řekl, že umírá jeho přítel Ketling. Byla to ale jen léčka, jak ho dostat z kláštera pryč. Wolodyjowský také potkal svou sestru, která jela lesem ještě se dvěma dívkami, Baškou a Krystýnou (Kryšou). Baška se pak s Michalem učila šermovat, mezitím Kryša hrála na hudební nástroj. Kryša se mu velice zalíbila, a tak jí požádal o ruku, nakonec souhlasila, že si ho vezme. Mezitím, co Michal bojoval s Tatary, Kryše se dvořil Ketling, ta mu ale řekla, že si ho vzít nemůže. To Ketlinga ranilo, a tak se rozhodl odjet, Kryša Ketlinga milovala, a tak se rozhodla, že raději půjde do kláštera. Řekla to i Michalovi, který se později od Bašky dozvěděl, že je to kvůli Ketlingovi, to se mu vůbec nelíbilo a rozhodl se, že si to s ním pojede vyřídit. Nakonec Michal přijel i s Ketlingem, a řekl, že než aby ho do konce života proklínali, bude lepší, když jim v lásce bránit nebude. Z toho byla Baška smutná a svěřila se Michalovi, že ho miluje, načež se zasnoubili. Rozhodli se, že o půlnoci vyrazí do války, Baška chtěl jít s Michalem, on jí to nechtěl dovolit, ale nakonec s nimi jela. Michal jí ukázal, jak to bude probíhat a kde je kdo schovaný. Někteří z protivníků uprchli a jeli proti Bašce, jednoho sestřelila ale pak spadla do propasti, kde jí začal objímat Asia (Efendi). Až chvíli poté přijel Michal. Asia milovala Evka, on ale vždy miloval Bašku. Nakonec se vydal s Asiem a Evkou, když jeli požádat jejího otce o požehnání. Asia se zdržel a bavil se přitom s Baškou, řekl jí, že jí miluje, ona ho praštila po hlavě a utekla i s oběma koni. Jednoho koně jí sežrali vlci a s druhým se propadla do ledu, ona přežila, ale kůň se utopil. Nakonec ale došla do vesnice a zachránila se. V tu chvíli se ale Asia mstil otci Evky, jí a celé vesnici, vesnici zapálil, jí odvezl a jejího otce zabil. Baška pak už byla zase s Michalem. Asia nabodli na kůl a zapálili ho. A v tu chvíli již Turci táhli. Pak byla rada, jak na Turky, zeptali se pana Wolodyjowského, jelikož měl z nich největší zkušenosti. On řekl, že by měli bojovat na dolním hradě a až bude dobyt, měli by se přemístit na horní hrad. Všichni s ním souhlasili a byli odhodláni jít bojovat. A tak museli přísahat. Pan Wolodyjowský: <a class='font-bold'>"Slibuji a přísahám, že jako velitel horního hradu radou pověřený, dokud nepadnu, nepřítele do hradu nevpustím, z hradu neustoupím a bílý prapor nevyvěsím, i kdybych měl sám najít svůj hrob pod troskami. K tomu mi dopomáhej Bůh i svatý kříž. Amen."</a> Pan Ketling: <a class='font-bold'>"Slibuji, že za všechna dobrodiní, kterých se mi v této vlasti dostalo, budu do poslední kapky krve hrad bránit, a spíše v jeho rozvalinách zemřu, než aby jeho hradby překročila noha nepřítele. K tomu mi dopomáhej Bůh i svatý kříž. Amen."</a> Turci šli proti nim i se svazky slámy, které házeli do příkopu před hradem, aby se přes něho dostali, měli i žebříky, aby hradby přelezli, obojí ale krásně hoří, a tak jim to zapálili. Tím skončila bitva v prvním dni, přes noc Turci hrad zaminovali a vyhodili do povětří, ještě den trvala bitva na tomto hradě a pak se Michal, Ketling i vojáci přemístili na horní hrad. Baška se s ním ještě stihla pro jistotu rozloučit. Další den již bojovali z horního hradu a podařilo se jim i trefit prachárnu (místo, kde byl uložen střelný prach). Ale pak pan Wolodyjowský dostal rozkaz, že se mají vzdát, že byla uzavřena dohoda o neútočení. Všichni vojáci tedy z hradu odešli, až na Michala a Ketlinga. Baška se snažila k Michalovi dostat, jelikož dostala jeho vzkaz. Ketling vyhodil hrad do povětří tím, že zapálil sklad se střelným prachem. Udělali to proto, aby neporušili přísahu, kterou dali, že se nevzdají.</p>
+            </div>
+        </div>
+        
+        <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
+            <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
                 <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Ohněm a mečem</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film se odehrává v různých letech, takže jej také rozdělím na následujících pár odstavců, roky 1647 až 1649.</p><p class='dark:text-gray-300 text-gray-600'>Jan Skrzetuski, který se zrovna vracel z Krymu, zachrání život Bohdanu Chmelnickému. Poté, co se dostane do krčmy, se seznámí s Janem Zaglobou a Longinem Podbipietou. Poté vyhodí Čaplinského v pravém filmovém gustu ven do bláta. Jan Skrzetuski zachrání paní Kurcewičovou a Helenu, se kterou se rychle zamilují a stejně rychle zasnoubí. Když se plují později přes Dněpr do Síče, tak jsou přepadeni.</p><p class='dark:text-gray-300 text-gray-600'>V roce 1648 kozáci defenestrují jejich zrádce v Síči a naplánují si povstání. Následně v bitvě u Žluté vody kozáci pod vedením Chmelnickým s přehledem vyhrávají a následně to zopakují u Korsunu. Bohun se dozví o Janu a Heleně, a tak si pro ni dojede. Zagloba se ji sice pokusí zachránit, ale Bohun ji stejně dostane a ukryje ji u čarodějnice Horpyny. Pouze člověk s glejtem od Bohuna může pro Helenu dovnitř.</p><p class='dark:text-gray-300 text-gray-600'>Stále v roce 1648 v táboře polských vojsk, jede Bohun na výzvědy, během kterých najde opilého Zaglobu, kterého následně uvězní. Toho však zachrání Jan Skrzetuski. Vojska knížete Jeremiáše Wisniowieckého se opevňují na tvrzi Zbaraž, jelikož jim utekla značná část jejich vojska. Jan po tomto kousku odjíždí hledat svoji nevěstu do Kyjeva. Mezitím se Zagloba a Wolodyjovsky znovu setkají s Bohunem v hospodě, kde spolu začnou bojovat jen proti jednomu. Nakonec Pan Wolodyjowski vyhraje, na úkor Bohunova života.</p><p class='dark:text-gray-300 text-gray-600'>V roce 1649 se setká Wolodyjowki, Zagloba, Podbipienta společně s Janem Skrzetuským, kterým jim zdělí, že Helena není v Kyjevě, jak se domníval. Ví však, kde je nyní, a tak se vydávají pro ni. Pomocí jeho glejtu se dostanou dovnitř, zastřelí a prorazí čarodějnicino srdce kůlem a zachrání Helenu. Mezitím se svádí bitva, kde kníže Wisniowiecki pošle Podbipietu, aby informoval krále o těžké situaci, ale to se mu nepodaří a tuto informaci mu musí sdělit Jan Skrzetuski. To se mu podaří, a ten ráno vyráží na pomoc.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Potopa</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film začíná pohledem na postavu Kmitice, který míří za Oleňkou. Dívkou, kterou mu odkázal její děd. Je s ním celkem spokojená, jenom se myslí, že jej „kazí“ jeho oficíři. To však není tak úplně pravda, jelikož na pomstu těchto oficírů, kteří byli zabiti v hospodské rvačce, vypálí celou vesnici. Oleňka jej sice ukryje, ale také mu řekne, ať už se nikdy nevrací. On ji však unese a zabarikáduje se v domě. Poté přijede pan Wolodyjovsky, který ho poráží v boji. Poté co se vyléčí, mu Wolodyjovsky předá dopis od hejtmana, ve kterém stojí, že může své hříchy odčinit službou.</p><p class='dark:text-gray-300 text-gray-600'>V této době Švédsko porušilo příměří a zaútočilo na Polsko. Kmitic se mu sice odpřisáhne, ale on zradí svou vlast a ten chce poté popravit pana Wolodyjovského. Dále pošle Kmitice unést jistého šlechtice, což se mu však nepovede a zraní se. Poté se chce dát k odboji, ale nemůže dále používat své jméno, a tak si ho změní na Babiniče. Kmiticovi se povedlo odpálit dělo, kterým Švédi ostřelovali klášter, na chvíli je zajat, ale brzy ho osvobodí.</p><p class='dark:text-gray-300 text-gray-600'>Polský král jede do Polska zvyšovat morálku. Vidíme, jak Poláci přepadají menší švédské posádky a masakrují je. Kmitic králi řekne, že je Kmitic. Zagloba a Wolodyjovsky si povídají s králem a potkají se s Kmiticem, který přežil. Švédi utíkají před Polskou jízdou, Tataři a Švédi spolu bojují. Poláci jsou odstřelováni kanóny, a tak polská lehká jízda objede Švédy do týla. Švédi přestanou střílet aspoň na chvíli a Poláci tedy mohou vyjet přímo do nich a vyhrají. Kmitic a Radimilský si dají duel na koních, který Kmitic vyhraje a ušetří svého protivníka a jede si pro svou ženu. Málem při tom zemře, ale stejně se shledají. Král sprostí Kmitice veškeré viny a Oleňka si ho vezme. </p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Pan Wolodyjowski</a></p><p class='dark:text-gray-300 text-gray-600'> <br>V roce 1668 Zagloba zjišťuje, že Wolodyjovského (dále jen Michal) žena zemřela. Ten se dá ke kamaldulskému klášteru. Zagloba ho přemluví, aby se odešel rozloučit s umírajícím Kettlingem. Po cestě jsou přepadeni loupežníky, které Michal snadno zabije. Když dorazí, zjistí, že Kettling je zdraví. Michal se stane příkladem pro Polský lid, a stane se znovu generálem. Jede do Kamence, kde má obnovit pevnost a bránit tak hranice před nájezdníky. </p><p class='dark:text-gray-300 text-gray-600'>Rok 1670, na trůně neschopný Michal Wisniowiecki, zem rozdělena rozbroji, hranice, za kterou jsou Tataři, je chráněna pouze malými oddíly. Díky lepších taktik se podaří Michalovi pobít větší oddíl Tatarů. Poté se však dozvídáme, že jeho sluha je nezvěstný syn tatarského vůdce, a tak se pokusí unést Basio, která ho ovšem zmrzačí a uteče zpět za svým manželem do Chreptiowa.</p><p class='dark:text-gray-300 text-gray-600'>Azja, poté co zabil šlechtice Nowowiejského, vypálil Raszkov, kde zabil také jeho obyvatele. Také dá Ewu jako služebnici nějakému Tatarovi jako pomstu. Adam Nowowiejski, její bratr, se vydá, společně se svojí jednotkou, za hranice se pomstít. To se mu povede, jelikož Azju pomocí koně nabodne pomalu na kůl, s tím že ho následně i upálil.</p><p class='dark:text-gray-300 text-gray-600'>Tataři překročí hranice a pokusí se dobít pohraniční pevnost. Na té se ujme velení Michal. Dokonce se mu i daří ji bránit, ale stejně Potocki nakonec neodolá a odevzdá hrad. Wolodyjowski s Kettlingem však zůstanou, aby jim mohli připravit poslední překvápko. Vyhodí se sebou hrad do povětří, aby jej nedostali Tataři do rukou. O rok později Polská vojska úspěšně porazí Tatary.</p>
             </div>
         </div>
         
+        <div class=" p-4 flex flex-col w-full min-w-0 overflow-x-auto dark:bg-gray-800 bg-white rounded-lg shadow-md">
+            <div class="dark:text-gray-300 text-gray-600 overflow-x-auto">
+                <p class='dark:text-gray-300 text-gray-600'><a class='font-extrabold text-lg'> Ohněm a mečem</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film začíná tím že na Bohdana Chmelnického zaútočí Tataři. V tom ho ale zachrání Janem Skřetovským, který právě přijel z Krymu. To ale ještě netušil, že zabránil léčce na Chmelnického, který nesl cenné listiny, v kterých král podporuje kozáky proti šlechtě.</p><p class='dark:text-gray-300 text-gray-600'>Když Jan se ale dozví že válka s Tatary se nestane kvůli senátu, předpověděl že to bude znamenat vzpouru a rozhodl se vyjet jako vyslanec do Záporožské Siče, kde teď velí Chmelnický. Když ale dojel do Siče, byl přepaden kozáky a dovlečen před Chmelnického jako zajatec. Chmelnický ho vykoupí, ale nabídku nepřijme. Jan stejně ale nemůže odejít, protože hned na to na ně zaútočí malá armáda Poláků. To ale odrazili pomocí silného deště, který způsobil bahno, které bylo na koně Polské armády moc.</p><p class='dark:text-gray-300 text-gray-600'>Po válce jim ale přišla špatná správa, že král, který byl s nimi spřízněný umřel. Tak začala válka mezi knížem a kozáky s Chmelnickým včele, který se také spojil s Tatary.</p><p class='dark:text-gray-300 text-gray-600'>Ve filmu je vyobrazeno obléhání Zbaraže. Ten Chmelnický s Tatary obléhaly dlouhou dobu dokud pevnosti nezačali docházet zásoby jídla a střeliva. Včas ale dorazí král a nastolí s Chmelnickým mír, čímž končí válka.</p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Potopa</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Pár filmů se odehrává po minulém filmu a vypráví o konfliktu mezi knížem hejtmanem, který chtěl na trůn usadit Švédského krále a konfederací, která to brala za zradu a chtěla tomu zabránit a považovala hejtmana za zrádce Polska.  </p><p class='dark:text-gray-300 text-gray-600'>Hlavní postavou filmu je Ondřej Kmitic, který celé dva filmy byl <a class='font-bold'>"tajně"</a> hájil zájmy konfederace, ale zároveň pracoval pro knížete hejtmana. Zpočátku se zdál plně oddaný hejtmanovy, který také zkoušel jeho oddanost a mu zaručoval bezpečnost jeho budoucí ženě. Postupem času bylo, ale zřejmé že Kmitic (a později pod krycím jménem Babynič) také považuje hejtmana za zrádce potom co využil svou pozici aby sabotoval usilí hejtmana a Švédska.</p><p class='dark:text-gray-300 text-gray-600'>První film vypráví o počátku konfliktu, je obsáhnuta scéna, kde je hejtmanem Švédský král vyhlášen jako budoucí král Polska a následný odpor šlechty, která si stála za Polskou úctou. Šlechta je ale zajata a určena k zastřelení, to se ale nepodaří a šlechta uteče a spojí se Kmiticem. Ty pak začnou odporovat proti hejtmanovy a knížeti Bohuslavovy, který byl hejtmanem najat, aby se vypořádal s konfederací.</p><p class='dark:text-gray-300 text-gray-600'>Druhý film už je jen o čím dál větším odporu který Kmitic a spol způsobují hejtmanovy a knížeti Bohuslavovy. Většina filmu se odehrála na katedrále na Slezsku, který také vede odpor proti Švédům a společně s konfederací se proti nim brání. Při obraně je také vyobrazen obrovský kanón, který snadno boural hradby katedrály, naštěstí ho Kmitic v noci zneškodnil, když se tajně vplížil ke kanónu a roztrhal ho pomocí správě umístěného střelného prachu.</p><p class='dark:text-gray-300 text-gray-600'>Film následně končí finální bitvou mezi konfederací a armádou Knížete Bohuslava, kterou Bohuslav prohrává a Kmitic si očišťuje jméno.  </p><p class='dark:text-gray-300 text-gray-600'> <br><a class='font-extrabold text-lg'> Pan Wolodyjowský</a></p><p class='dark:text-gray-300 text-gray-600'> <br>Film neočekávaně vypráví o životě Pana Wolodyjowského. Děj začíná v roce 1668, Polsko je ve špatném stavu, protože lidi ztrácí důvěru v Polsko jako vlast. Bylo tedy potřeba někoho jako příklad Polsku, aby mělo ještě šanci se ubránit před nájezdy nepřátel. Proto byl Pan Wolodyjowský poslán na do Kamence.</p><p class='dark:text-gray-300 text-gray-600'>Trochu později v roce 1670 se situace v Polsku stále zhoršovala, na trůn usedl neschopný Michal Korybut Wisniowiecký a Polské hranice byly už střeženy jen zřídka. Hranice také stále bránil Pan Wolodyjowský, který byl pozván na radu, kde měli vyřešit jak pokračovat s obranou Polska. Přestože zdroje docházejí Pan Wolodyjowský a spol. sestaví strategii jak pro zatím odrážet nepřátelská vojska.</p><p class='dark:text-gray-300 text-gray-600'>To se jim také ze začátku daří, i když jsou to bližší boje než by si měšťané představovali a prosí, aby se města vzdala. Tomu ale Pan Wolodyjowský a spol. odporují a tak bojují dále, dokud se jim nedostane že panovník podepsal dohodu. Pan Wolodyjowský a jeho blízcí ví co to pro Polsko znamená a tak spáchali sebevraždu.</p><p class='dark:text-gray-300 text-gray-600'>To však probudí v Polsku vlnu a o rok později Polsko rozdrtí Turecké vojsko.</p>
+            </div>
+        </div>
+        
     </div>
+    <script>
+        function shuffleDivs() {
+            const parent = document.getElementById('materials');
+            const children = Array.from(parent.children);
+
+            for (let i = children.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [children[i], children[j]] = [children[j], children[i]];
+            }
+            for (let i = children.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [children[i], children[j]] = [children[j], children[i]];
+            }
+
+            children.forEach(child => parent.appendChild(child));
+        }
+        window.onload = shuffleDivs;
+    </script>
 </div>
 
     </div>
@@ -222,28 +144,30 @@
     
     <div class="mt-2 flex flex-grow">
     </div>
-    
-    <!-- Footer -->
-<footer class="py-6 px-6 dark:bg-gray-800 bg-white">
-    <div class="sm:px-6 lg:px-8 container mx-auto max-w-7xl">
-        <div class="flex justify-between items-center">
-            <div class="text-center md:text-left text-gray-600 dark:text-gray-300">
-                <h5 class="text-lg font-semibold">mares-archives</h5>
-                <p class="py-2">©  All rights reserved.</p>
-            </div>
-            <a href="https://github.com/mares-archives" target="_blank" class="ml-3 my-auto flex flex-row ">
 
-                <svg class="w-5 my-auto" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path fill="white"
-                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                </svg>
-                <p
-                    class="ml-2 my-auto dark:text-gray-300 dark:hover:text-gray-500 text-gray-600 hover:text-gray-800 rounded-md font-medium">
-                    Github</p>
-            </a>
+    <!-- Footer -->
+<footer class="py-6 px-6 bg-gray-800 ">
+    <div class="sm:px-6 lg:px-8 container mx-auto max-w-7xl">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center  text-gray-300">
+                <h5 class="text-lg font-semibold">mares-archives</h5>
+                <p class="py-2">© Mares Archives mantainers - All rights reserved.</p>
+            </div>
+            <div class="flex flex-col items-center text-center  text-gray-300">
+                <a href="https://github.com/mares-archives" target="_blank" class="flex flex-row">
+                    <svg class="w-5 my-auto" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512">
+                        <path fill="white"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                    </svg>
+                    <p class="ml-2 my-auto text-gray-300 hover:text-gray-400 font-medium rounded-md">
+                        Github</p>
+                </a>
+                <p class="py-2 text-gray-300 hover:text-gray-400 font-medium">da.mares.archive@gmail.com</p>
+            </div>
         </div>
     </div>
 </footer>
 </body>
+
 </html>
